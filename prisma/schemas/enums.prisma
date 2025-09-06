@@ -1,0 +1,5 @@
+enum ReviewSource {
+    HOSTAWAY
+    GOOGLE
+    OTHER
+}

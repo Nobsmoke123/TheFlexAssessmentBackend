@@ -1,0 +1,9 @@
+model CancellationPolicy {
+    id                              String                  @id     @default(cuid())
+    property                        Property                @relation(fields: [propertyId], references: [id])
+    propertyId                      String 
+    policyName                      String
+    description                     String?
+
+    @@index([propertyId], map: "idx_cancellationpolicy_propertyId")
+}

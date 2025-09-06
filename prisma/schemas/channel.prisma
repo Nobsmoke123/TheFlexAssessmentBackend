@@ -1,0 +1,8 @@
+model Channel {
+    id                              Int                         @id
+    name                            String                      @unique
+    displayName                     String 
+    reviews                         Review[]
+
+    @@index([name], map: "idx_channel_name")
+}

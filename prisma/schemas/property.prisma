@@ -1,0 +1,38 @@
+model Property {
+    id                                                  String                      @id         @default(cuid())
+    googlePlaceId                                       String?
+    name                                                String 
+    listingId                                           Int                         @unique
+    externalListingName                                 String
+    internalListingName                                 String                      @unique
+    description                                         String 
+    address                                             String
+    city                                                String
+    country                                             String
+    zipcode                                             String
+    latitude                                            Float
+    longitude                                           Float 
+    guests                                              Int
+    bedrooms                                            Int 
+    bathrooms                                           Int
+    beds                                                Int
+    checkInTime                                         String 
+    checkOutTime                                        String 
+    price                                               Float
+                
+    images                                              PropertyImage[]
+    amenities                                           PropertyAmenity[]
+    houseRules                                          HouseRule[]
+    cancellationPolicies                                CancellationPolicy[]
+    reviews                                             Review[]
+                  
+    createdAt                                           DateTime                        @default(now())
+    updatedAt                                           DateTime                        @updatedAt
+
+
+    @@index([googlePlaceId], map: "idx_property_googlePlaceId")
+    @@index([internalListingName], map: "idx_property_internalListingName")
+    @@index([latitude], map: "idx_property_latitude")
+    @@index([longitude], map: "idx_property_longitude")
+    @@index([listingId], map: "idx_property_listingId")
+}               

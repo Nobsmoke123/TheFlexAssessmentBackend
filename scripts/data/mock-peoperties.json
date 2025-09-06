@@ -1,0 +1,1414 @@
+{
+  "status": "success",
+  "result": [
+    {
+      "id": 155613,
+      "propertyTypeId": 1,
+      "name": "The Bromley Collection",
+      "externalListingName": "The Bromley Collection",
+      "internalListingName": "2B E1 A - 27 St Clements",
+      "description": "An ideal location for anyone looking to make the most out of living in some of the most vibrant areas of London, whilst maintaining fantastic access to the city centre and, a fabulous living space.\n\nTwo bedrooms apartment with 2 bathrooms, a kitchen with top appliances, and a large living room.\n\nFive people can comfortably sleep on the property:\n\n- Bedroom 1: one double size bed (Sleeps 2)\n\n- Bedroom 2: one double size bed (Sleeps 2)\n\n-Living room: 1 Air Mattress (Sleeps 1)\n\n- Bathroom 1: Shower, Toilet, Fresh Towels, Shampoo and Shower Gel.\n\n- Bathroom 2: Shower, Toilet, Fresh Towels, Shampoo and Shower Gel.\n\nKitchen: Fully Equipped with top-notch appliances such as Cooking Utensils, Coffee & Tea...\n\nStorage: Multiple Wardrobes and Units for Clothes and Luggage.\n\nFamily:\nAll Duvets and Pillows are Hypoallergenic.\nBed Linen 100% Cotton.\nHigh Chair and other children's amenities are available upon request.\n\nStorage: Multiple Wardrobes and Units for Clothes and Luggage.\n\nWifi: 35mbps internet\n\nDecorated to the highest standards.\n\nThe flat is perfectly located within close proximity to supermarkets, cafes, and markets. The area is quiet but within walking distance of parks, rivers, museums, art galleries, markets, and places to eat.\n\nThe apartment is great for business travelers with most of the commercial districts a short walk or tube ride away.\n\nGrounded Brothers - (8-minute walk)\nCow and Pig Bromley - (10-minute walk)\nBromley North Train Station - (8-minute walk)",
+      "thumbnailUrl": null,
+      "houseRules": "Quiet hours from 11pm to 8am",
+      "keyPickup": null,
+      "specialInstruction": null,
+      "doorSecurityCode": null,
+      "country": "United Kingdom of Great Britain and Northern Ireland",
+      "countryCode": "GB",
+      "state": "England",
+      "city": "London",
+      "street": "Plymouth Road",
+      "address": "4 Plymouth Rd, Bromley BR1 3JD, UK",
+      "publicAddress": "4 Plymouth Road, England, United Kingdom, BR1 3JD",
+      "zipcode": "BR1 3JD",
+      "price": 400,
+      "starRating": null,
+      "weeklyDiscount": 0.9,
+      "monthlyDiscount": 0.8,
+      "propertyRentTax": 0,
+      "guestPerPersonPerNightTax": 0,
+      "guestStayTax": 0,
+      "guestNightlyTax": 0,
+      "refundableDamageDeposit": 0,
+      "isDepositStayCollected": 0,
+      "personCapacity": 5,
+      "maxChildrenAllowed": null,
+      "maxInfantsAllowed": null,
+      "maxPetsAllowed": null,
+      "lat": 51.4102168,
+      "lng": 0.0238711,
+      "checkInTimeStart": 15,
+      "checkInTimeEnd": 23,
+      "checkOutTime": 10,
+      "cancellationPolicy": "flexible",
+      "squareMeters": null,
+      "roomType": "entire_home",
+      "bathroomType": "private",
+      "bedroomsNumber": 2,
+      "bedsNumber": 3,
+      "bathroomsNumber": 2,
+      "guestBathroomsNumber": null,
+      "minNights": 5,
+      "maxNights": 1125,
+      "guestsIncluded": 1,
+      "cleaningFee": 100,
+      "checkinFee": 0,
+      "priceForExtraPerson": 0,
+      "instantBookable": 1,
+      "instantBookableLeadTime": null,
+      "airbnbBookingLeadTime": null,
+      "airbnbBookingLeadTimeAllowRequestToBook": null,
+      "airbnbName": "The Bromley Collection",
+      "airbnbSummary": null,
+      "airbnbSpace": null,
+      "airbnbAccess": null,
+      "airbnbInteraction": null,
+      "airbnbNeighborhoodOverview": null,
+      "airbnbTransit": null,
+      "airbnbNotes": null,
+      "airbnbExportStatus": null,
+      "vrboExportStatus": null,
+      "marriotExportStatus": null,
+      "bookingcomExportStatus": null,
+      "expediaExportStatus": null,
+      "googleExportStatus": null,
+      "allowSameDayBooking": 0,
+      "sameDayBookingLeadTime": 12,
+      "contactName": "Michael",
+      "contactSurName": "Buggy",
+      "contactPhone1": "+44 2033 074477",
+      "contactPhone2": null,
+      "contactLanguage": "English - French -Ar",
+      "contactEmail": "info@theflexliving.com",
+      "contactAddress": null,
+      "language": "en",
+      "currencyCode": "GBP",
+      "timeZoneName": "Europe/London",
+      "wifiUsername": null,
+      "wifiPassword": null,
+      "cleannessStatus": "2",
+      "cleaningInstruction": null,
+      "cleannessStatusUpdatedOn": null,
+      "homeawayPropertyName": "The Bromley Collection",
+      "homeawayPropertyHeadline": "The Bromley Collection",
+      "homeawayPropertyDescription": "An ideal location for anyone looking to make the most out of living in some of the most vibrant areas of London, whilst maintaining fantastic access to the city centre and, a fabulous living space.\n\nTwo bedrooms apartment with 2 bathrooms, a kitchen with top appliances, and a large living room.\n\nFive people can comfortably sleep on the property:\n\n- Bedroom 1: one double size bed (Sleeps 2)\n\n- Bedroom 2: one double size bed (Sleeps 2)\n\n-Living room: 1 Air Mattress (Sleeps 1)\n\n- Bathroom 1: Shower, Toilet, Fresh Towels, Shampoo and Shower Gel.\n\n- Bathroom 2: Shower, Toilet, Fresh Towels, Shampoo and Shower Gel.\n\nKitchen: Fully Equipped with top-notch appliances such as Cooking Utensils, Coffee & Tea...\n\nStorage: Multiple Wardrobes and Units for Clothes and Luggage.\n\nFamily:\nAll Duvets and Pillows are Hypoallergenic.\nBed Linen 100% Cotton.\nHigh Chair and other children's amenities are available upon request.\n\nStorage: Multiple Wardrobes and Units for Clothes and Luggage.\n\nWifi: 35mbps internet\n\nDecorated to the highest standards.\n\nWe are happy to help our guests at any time!\n\nThe flat is perfectly located within close proximity to supermarkets, cafes, and markets. The area is quiet but within walking distance of parks, rivers, museums, art galleries, markets, and places to eat.\n\nThe apartment is great for business travelers with most of the commercial districts a short walk or tube ride away.\n\nGrounded Brothers - (8-minute walk)\nCow and Pig Bromley - (10-minute walk)\nBromley North Train Station - (8-minute walk)",
+      "bookingcomPropertyName": "The Bromley Collection",
+      "bookingcomPropertyRoomName": "Apartment",
+      "bookingcomPropertyDescription": "An ideal location for anyone looking to make the most out of living in some of the most vibrant areas of London, whilst maintaining fantastic access to the city centre and, a fabulous living space.\n\nTwo bedrooms apartment with 2 bathrooms, a kitchen with top appliances, and a large living room.\n\nFive people can comfortably sleep on the property:\n\n- Bedroom 1: one double size bed (Sleeps 2)\n\n- Bedroom 2: one double size bed (Sleeps 2)\n\n-Living room: 1 Air Mattress (Sleeps 1)\n\n- Bathroom 1: Shower, Toilet, Fresh Towels, Shampoo and Shower Gel.\n\n- Bathroom 2: Shower, Toilet, Fresh Towels, Shampoo and Shower Gel.\n\nKitchen: Fully Equipped with top-notch appliances such as Cooking Utensils, Coffee & Tea...\n\nStorage: Multiple Wardrobes and Units for Clothes and Luggage.\n\nFamily:\nAll Duvets and Pillows are Hypoallergenic.\nBed Linen 100% Cotton.\nHigh Chair and other children's amenities are available upon request.\n\nStorage: Multiple Wardrobes and Units for Clothes and Luggage.\n\nWifi: 35mbps internet\n\nDecorated to the highest standards.\n\nWe are happy to help our guests at any time!\n\nThe flat is perfectly located within close proximity to supermarkets, cafes, and markets. The area is quiet but within walking distance of parks, rivers, museums, art galleries, markets, and places to eat.\n\nThe apartment is great for business travelers with most of the commercial districts a short walk or tube ride away.\n\nGrounded Brothers - (8-minute walk)\nCow and Pig Bromley - (10-minute walk)\nBromley North Train Station - (8-minute walk)",
+      "invoicingContactName": null,
+      "invoicingContactSurName": null,
+      "invoicingContactPhone1": null,
+      "invoicingContactPhone2": null,
+      "invoicingContactLanguage": null,
+      "invoicingContactEmail": null,
+      "invoicingContactAddress": null,
+      "invoicingContactCity": null,
+      "invoicingContactZipcode": null,
+      "invoicingContactCountry": null,
+      "attachment": null,
+      "listingAmenities": [
+        {
+          "id": 207762480,
+          "amenityId": 1,
+          "amenityName": "Cable TV"
+        },
+        {
+          "id": 207762437,
+          "amenityId": 2,
+          "amenityName": "Internet"
+        },
+        {
+          "id": 207762440,
+          "amenityId": 13,
+          "amenityName": "Washing Machine"
+        },
+        {
+          "id": 207762451,
+          "amenityId": 16,
+          "amenityName": "24-hour checkin"
+        },
+        {
+          "id": 207762469,
+          "amenityId": 17,
+          "amenityName": "Hair Dryer"
+        },
+        {
+          "id": 207762445,
+          "amenityId": 18,
+          "amenityName": "Heating"
+        },
+        {
+          "id": 207762477,
+          "amenityId": 25,
+          "amenityName": "Smoke detector"
+        },
+        {
+          "id": 207762465,
+          "amenityId": 26,
+          "amenityName": "Carbon Monoxide Detector"
+        },
+        {
+          "id": 207762448,
+          "amenityId": 29,
+          "amenityName": "Essentials"
+        },
+        {
+          "id": 207762457,
+          "amenityId": 30,
+          "amenityName": "Shampoo"
+        },
+        {
+          "id": 207762433,
+          "amenityId": 31,
+          "amenityName": "Hangers"
+        },
+        {
+          "id": 207762467,
+          "amenityId": 32,
+          "amenityName": "Iron"
+        },
+        {
+          "id": 207762453,
+          "amenityId": 34,
+          "amenityName": "TV"
+        },
+        {
+          "id": 207762431,
+          "amenityId": 47,
+          "amenityName": "Private living room"
+        },
+        {
+          "id": 207762466,
+          "amenityId": 48,
+          "amenityName": "Suitable for children"
+        },
+        {
+          "id": 207762458,
+          "amenityId": 49,
+          "amenityName": "Suitable for infants"
+        },
+        {
+          "id": 207762439,
+          "amenityId": 53,
+          "amenityName": "Iron board"
+        },
+        {
+          "id": 207762464,
+          "amenityId": 54,
+          "amenityName": "Linens"
+        },
+        {
+          "id": 207762479,
+          "amenityId": 56,
+          "amenityName": "Toaster"
+        },
+        {
+          "id": 207762455,
+          "amenityId": 57,
+          "amenityName": "Dishwasher"
+        },
+        {
+          "id": 207762472,
+          "amenityId": 58,
+          "amenityName": "Microwave"
+        },
+        {
+          "id": 207762462,
+          "amenityId": 59,
+          "amenityName": "Oven"
+        },
+        {
+          "id": 207762454,
+          "amenityId": 60,
+          "amenityName": "Electric kettle"
+        },
+        {
+          "id": 207762450,
+          "amenityId": 62,
+          "amenityName": "Shower"
+        },
+        {
+          "id": 207762447,
+          "amenityId": 63,
+          "amenityName": "Tub"
+        },
+        {
+          "id": 207762444,
+          "amenityId": 68,
+          "amenityName": "Stove"
+        },
+        {
+          "id": 207762446,
+          "amenityId": 69,
+          "amenityName": "Refrigerator"
+        },
+        {
+          "id": 207762438,
+          "amenityId": 70,
+          "amenityName": "Towels"
+        },
+        {
+          "id": 207762432,
+          "amenityId": 72,
+          "amenityName": "Garden or backyard"
+        },
+        {
+          "id": 207762473,
+          "amenityId": 74,
+          "amenityName": "Kitchen utensils"
+        },
+        {
+          "id": 207762441,
+          "amenityId": 101,
+          "amenityName": "Hot water"
+        },
+        {
+          "id": 207762456,
+          "amenityId": 129,
+          "amenityName": "Toilet"
+        },
+        {
+          "id": 207762459,
+          "amenityId": 149,
+          "amenityName": "Dining area"
+        },
+        {
+          "id": 207762475,
+          "amenityId": 202,
+          "amenityName": "Long term stays allowed"
+        },
+        {
+          "id": 207762449,
+          "amenityId": 267,
+          "amenityName": "Enhanced Cleaning Practices"
+        },
+        {
+          "id": 207762470,
+          "amenityId": 272,
+          "amenityName": "Contactless Check-In/Out"
+        },
+        {
+          "id": 207762436,
+          "amenityId": 280,
+          "amenityName": "Free WiFi"
+        },
+        {
+          "id": 207762478,
+          "amenityId": 282,
+          "amenityName": "WiFi speed (25+ Mbps)"
+        },
+        {
+          "id": 207762476,
+          "amenityId": 287,
+          "amenityName": "Smart TV"
+        },
+        {
+          "id": 207762442,
+          "amenityId": 294,
+          "amenityName": "Dining table"
+        },
+        {
+          "id": 207762474,
+          "amenityId": 337,
+          "amenityName": "Cleaning products"
+        },
+        {
+          "id": 207762463,
+          "amenityId": 338,
+          "amenityName": "Body soap"
+        },
+        {
+          "id": 207762468,
+          "amenityId": 339,
+          "amenityName": "Conditioner"
+        },
+        {
+          "id": 207762461,
+          "amenityId": 341,
+          "amenityName": "Shower gel"
+        },
+        {
+          "id": 207762430,
+          "amenityId": 342,
+          "amenityName": "Clothing storage"
+        },
+        {
+          "id": 207762435,
+          "amenityId": 343,
+          "amenityName": "Drying rack for clothing"
+        },
+        {
+          "id": 207762443,
+          "amenityId": 351,
+          "amenityName": "Portable fans"
+        },
+        {
+          "id": 207762460,
+          "amenityId": 357,
+          "amenityName": "Freezer"
+        },
+        {
+          "id": 207762452,
+          "amenityId": 361,
+          "amenityName": "Wine glasses"
+        }
+      ],
+      "listingBedTypes": [
+        {
+          "id": 18355999,
+          "bedTypeId": 2,
+          "quantity": 1,
+          "bedroomNumber": 1
+        },
+        {
+          "id": 18356000,
+          "bedTypeId": 2,
+          "quantity": 1,
+          "bedroomNumber": 2
+        },
+        {
+          "id": 18356001,
+          "bedTypeId": 49,
+          "quantity": 1,
+          "bedroomNumber": 0
+        }
+      ],
+      "listingImages": [
+        {
+          "id": 298057373,
+          "caption": "Photo 5.jpg",
+          "bookingEngineCaption": null,
+          "airbnbCaption": null,
+          "vrboCaption": null,
+          "url": "https://hostaway-platform.s3.us-west-2.amazonaws.com/listing/61148-155613-Q--MbaXvAXE-zjXmOxoJ2Pq9cuC06iwhkZu12FefEies-6425773082011",
+          "sortOrder": 1
+        },
+        {
+          "id": 298057374,
+          "caption": "Photo 1.jpg",
+          "bookingEngineCaption": null,
+          "airbnbCaption": null,
+          "vrboCaption": null,
+          "url": "https://hostaway-platform.s3.us-west-2.amazonaws.com/listing/61148-155613-8kZYWNkuTpiBCDLYq2--ftV--3BrChTZBGuDv2ZqxZQFk-642577378cbb2",
+          "sortOrder": 2
+        },
+        {
+          "id": 298057375,
+          "caption": "Photo 4.jpg",
+          "bookingEngineCaption": null,
+          "airbnbCaption": null,
+          "vrboCaption": null,
+          "url": "https://hostaway-platform.s3.us-west-2.amazonaws.com/listing/61148-155613-wsfgj1N9QbgIUJDtOc3RWrpZ6d0MpKOLW79bukNp--gM-6425773eb346a",
+          "sortOrder": 3
+        },
+        {
+          "id": 298057376,
+          "caption": "Photo 2.jpg",
+          "bookingEngineCaption": null,
+          "airbnbCaption": null,
+          "vrboCaption": null,
+          "url": "https://hostaway-platform.s3.us-west-2.amazonaws.com/listing/61148-155613-MPSNBffYst12DUwg4SxAfApqD5yfewt3Yd9t5p7vrww-6425774610986",
+          "sortOrder": 4
+        },
+        {
+          "id": 298057377,
+          "caption": "Cover Photo.jpg",
+          "bookingEngineCaption": null,
+          "airbnbCaption": null,
+          "vrboCaption": null,
+          "url": "https://hostaway-platform.s3.us-west-2.amazonaws.com/listing/61148-155613-iyM94ntDUqzJWlvM7K0jydynf3nUm3nKYTokZv9WnR8-6425774de77d2",
+          "sortOrder": 5
+        },
+        {
+          "id": 298057378,
+          "caption": "Photo 6.jpg",
+          "bookingEngineCaption": null,
+          "airbnbCaption": null,
+          "vrboCaption": null,
+          "url": "https://hostaway-platform.s3.us-west-2.amazonaws.com/listing/61148-155613-jWE3j5tl6Hq1KUW3MNenRbHB8byTcqBylbXy3vn5GW8-642577571e71f",
+          "sortOrder": 6
+        },
+        {
+          "id": 298057379,
+          "caption": "Photo 8.jpg",
+          "bookingEngineCaption": null,
+          "airbnbCaption": null,
+          "vrboCaption": null,
+          "url": "https://hostaway-platform.s3.us-west-2.amazonaws.com/listing/61148-155613-fpANhjPxQH0UBsXF4LGaM60lzK78w0drVn2e3tq4gTE-642577615abd4",
+          "sortOrder": 7
+        },
+        {
+          "id": 298057380,
+          "caption": "Photo 7.jpg",
+          "bookingEngineCaption": null,
+          "airbnbCaption": null,
+          "vrboCaption": null,
+          "url": "https://hostaway-platform.s3.us-west-2.amazonaws.com/listing/61148-155613-cXzFkL--eb42nnvhxlCkpUohN5RWrGqx7LFsU6THxjyE-64257769ce50c",
+          "sortOrder": 8
+        }
+      ],
+      "listingTags": [
+        {
+          "id": 15413,
+          "name": "2B E1"
+        }
+      ],
+      "listingUnits": [],
+      "propertyLicenseNumber": null,
+      "propertyLicenseType": null,
+      "propertyLicenseIssueDate": null,
+      "propertyLicenseExpirationDate": null,
+      "customFieldValues": [
+        {
+          "id": 42729058,
+          "customFieldId": 53002,
+          "value": "",
+          "insertedOn": "2024-10-27 21:22:32",
+          "updatedOn": "2024-10-31 13:39:21",
+          "customField": {
+            "id": 53002,
+            "name": "rehan",
+            "possibleValues": null,
+            "type": "number",
+            "isPublic": 1,
+            "insertedOn": "2023-11-12 02:09:04",
+            "updatedOn": "2023-11-12 02:09:04"
+          }
+        },
+        {
+          "id": 42729059,
+          "customFieldId": 68667,
+          "value": "",
+          "insertedOn": "2024-10-27 21:22:32",
+          "updatedOn": "2024-10-31 13:39:21",
+          "customField": {
+            "id": 68667,
+            "name": "grouped_property",
+            "possibleValues": [
+              {
+                "value": "Yes"
+              },
+              {
+                "value": "No"
+              }
+            ],
+            "type": "dropdown",
+            "isPublic": 1,
+            "insertedOn": "2024-10-27 10:33:24",
+            "updatedOn": "2024-10-27 10:33:24"
+          }
+        },
+        {
+          "id": 44073289,
+          "customFieldId": 71488,
+          "value": null,
+          "insertedOn": "2025-02-25 09:13:25",
+          "updatedOn": "2025-02-25 09:13:25",
+          "customField": {
+            "id": 71488,
+            "name": "Portfolio",
+            "possibleValues": null,
+            "type": "text",
+            "isPublic": 1,
+            "insertedOn": "2025-01-06 11:29:46",
+            "updatedOn": "2025-01-06 11:29:46"
+          }
+        },
+        {
+          "id": 44073290,
+          "customFieldId": 70501,
+          "value": null,
+          "insertedOn": "2025-02-25 09:13:26",
+          "updatedOn": "2025-02-25 09:13:26",
+          "customField": {
+            "id": 70501,
+            "name": "Lockbox",
+            "possibleValues": [
+              {
+                "value": "Yes"
+              },
+              {
+                "value": "No"
+              }
+            ],
+            "type": "dropdown",
+            "isPublic": 1,
+            "insertedOn": "2024-12-06 11:22:11",
+            "updatedOn": "2024-12-06 11:22:11"
+          }
+        },
+        {
+          "id": 44073291,
+          "customFieldId": 69508,
+          "value": null,
+          "insertedOn": "2025-02-25 09:13:26",
+          "updatedOn": "2025-02-25 09:13:26",
+          "customField": {
+            "id": 69508,
+            "name": "Number of Flats",
+            "possibleValues": null,
+            "type": "number",
+            "isPublic": 1,
+            "insertedOn": "2024-11-15 16:59:26",
+            "updatedOn": "2024-11-15 16:59:26"
+          }
+        }
+      ],
+      "applyPropertyRentTaxToFees": null,
+      "bookingEngineLeadTime": null,
+      "cancellationPolicyId": 149048,
+      "vrboCancellationPolicyId": 79371,
+      "marriottCancellationPolicyId": 79376,
+      "bookingCancellationPolicyId": 79380,
+      "listingFeeSetting": [],
+      "isRentalAgreementActive": null,
+      "averageNightlyPrice": null,
+      "bookingcomPropertyRegisteredInVcs": null,
+      "bookingcomPropertyHasVat": null,
+      "bookingcomPropertyDeclaresRevenue": null,
+      "airbnbCancellationPolicyId": 79385,
+      "airbnbListingUrl": null,
+      "vrboListingUrl": null,
+      "googleVrListingUrl": null,
+      "expediaListingUrl": null,
+      "averageReviewRating": null,
+      "partnersListingMarkup": 1,
+      "airbnbOfficialListingMarkup": 1,
+      "bookingEngineMarkup": 1,
+      "homeawayApiMarkup": 1,
+      "marriottListingMarkup": 1,
+      "latestActivityOn": "2025-02-25 09:13:25",
+      "bookingEngineUrls": [],
+      "marriottListingName": null,
+      "airbnbPetFeeAmount": null,
+      "insertedOn": "2023-03-30 11:48:46",
+      "insuranceEligibilityStatus": null,
+      "listingSettings": null
+    },
+    {
+      "id": 155615,
+      "propertyTypeId": 1,
+      "name": "The Peckham Apartments",
+      "externalListingName": "The Peckham Apartments",
+      "internalListingName": "2B E1 - 33 St Clements",
+      "description": "An ideal location for anyone looking to make the most out of living in some of the most vibrant areas of London, whilst maintaining fantastic access to the city center and, a fabulous living space.\n\nOne bedroom apartment with 1 bathroom, a kitchen with top appliances, and a large living room.\n\nThree people can comfortably sleep on the property:\n\n- Bedroom 1: one double size bed (Sleeps 2)\n\n-Living room: 1 Air Mattresses (Sleep 1)\n\n- Bathroom: Shower, Toilet, Fresh Towels, Shampoo and Shower Gel.\n\nKitchen: Fully Equipped with top-notch appliances such as Cooking Utensils, Coffee & Tea...\n\nStorage: Multiple Wardrobes and Units for Clothes and Luggage.\n\nFamily:\nAll Duvets and Pillows are Hypoallergenic.\nBed Linen 100% Cotton.\nHigh Chair and other children's amenities are available upon request.\n\nStorage: Multiple Wardrobes and Units for Clothes and Luggage.\n\nWifi: 35mbps internet\n\nDecorated to the highest standards.\n\nThe flat is perfectly located within close proximity to supermarkets, cafes, and markets. The area is quiet but within walking distance of parks, rivers, museums, art galleries, markets, and places to eat.\n\nThe apartment is great for business travelers with most of the commercial districts a short walk or tube ride away.\n\nBlue Nile South Restaurant - 7 minute walk\nCravings La Carreta - 17 minutes walk\nCommercial Way (Stop T) - 3 minute walk",
+      "thumbnailUrl": null,
+      "houseRules": "Quiet hours from 11pm to 8am",
+      "keyPickup": null,
+      "specialInstruction": null,
+      "doorSecurityCode": null,
+      "country": "United Kingdom of Great Britain and Northern Ireland",
+      "countryCode": "GB",
+      "state": "England",
+      "city": "London",
+      "street": "Friary Road",
+      "address": "Friary Rd, London SE15 1PX, UK",
+      "publicAddress": "Friary Road, England, United Kingdom, SE15 1PX",
+      "zipcode": "SE15 1PX",
+      "price": 400,
+      "starRating": null,
+      "weeklyDiscount": 0.9,
+      "monthlyDiscount": 0.8,
+      "propertyRentTax": 0,
+      "guestPerPersonPerNightTax": 0,
+      "guestStayTax": 0,
+      "guestNightlyTax": 0,
+      "refundableDamageDeposit": 0,
+      "isDepositStayCollected": 0,
+      "personCapacity": 3,
+      "maxChildrenAllowed": null,
+      "maxInfantsAllowed": null,
+      "maxPetsAllowed": null,
+      "lat": 51.4779008,
+      "lng": -0.0650504,
+      "checkInTimeStart": 15,
+      "checkInTimeEnd": 23,
+      "checkOutTime": 10,
+      "cancellationPolicy": "flexible",
+      "squareMeters": 42,
+      "roomType": "entire_home",
+      "bathroomType": "private",
+      "bedroomsNumber": 1,
+      "bedsNumber": 2,
+      "bathroomsNumber": 1,
+      "guestBathroomsNumber": null,
+      "minNights": 1,
+      "maxNights": 1125,
+      "guestsIncluded": 1,
+      "cleaningFee": 75,
+      "checkinFee": 0,
+      "priceForExtraPerson": 0,
+      "instantBookable": 1,
+      "instantBookableLeadTime": null,
+      "airbnbBookingLeadTime": null,
+      "airbnbBookingLeadTimeAllowRequestToBook": null,
+      "airbnbName": "The Peckham Apartments",
+      "airbnbSummary": null,
+      "airbnbSpace": null,
+      "airbnbAccess": null,
+      "airbnbInteraction": null,
+      "airbnbNeighborhoodOverview": null,
+      "airbnbTransit": null,
+      "airbnbNotes": null,
+      "airbnbExportStatus": null,
+      "vrboExportStatus": null,
+      "marriotExportStatus": null,
+      "bookingcomExportStatus": null,
+      "expediaExportStatus": null,
+      "googleExportStatus": null,
+      "allowSameDayBooking": 0,
+      "sameDayBookingLeadTime": 12,
+      "contactName": "Michael",
+      "contactSurName": "Buggy",
+      "contactPhone1": "+44 2033 074477",
+      "contactPhone2": null,
+      "contactLanguage": "English - French -Ar",
+      "contactEmail": "info@theflexliving.com",
+      "contactAddress": null,
+      "language": "en",
+      "currencyCode": "AED",
+      "timeZoneName": "Europe/London",
+      "wifiUsername": null,
+      "wifiPassword": null,
+      "cleannessStatus": "2",
+      "cleaningInstruction": null,
+      "cleannessStatusUpdatedOn": null,
+      "homeawayPropertyName": "The Peckham Apartments",
+      "homeawayPropertyHeadline": "The Peckham Apartments",
+      "homeawayPropertyDescription": "An ideal location for anyone looking to make the most out of living in some of the most vibrant areas of London, whilst maintaining fantastic access to the city center and, a fabulous living space.\n\nAn ideal location for anyone looking to make the most out of living in some of the most vibrant areas of London, whilst maintaining fantastic access to the city centre and, a fabulous living space.\n\nOne bedroom apartment with 1 bathroom, a kitchen with top appliances, and a large living room.\n\nThree people can comfortably sleep on the property:\n\n- Bedroom 1: one double size bed (Sleeps 2)\n\n-Living room: 1 Air Mattresses (Sleep 1)\n\n- Bathroom: Shower, Toilet, Fresh Towels, Shampoo and Shower Gel.\n\nKitchen: Fully Equipped with top-notch appliances such as Cooking Utensils, Coffee & Tea...\n\nStorage: Multiple Wardrobes and Units for Clothes and Luggage.\n\nFamily:\nAll Duvets and Pillows are Hypoallergenic.\nBed Linen 100% Cotton.\nHigh Chair and other children's amenities are available upon request.\n\nStorage: Multiple Wardrobes and Units for Clothes and Luggage.\n\nWifi: 35mbps internet\n\nDecorated to the highest standards.",
+      "bookingcomPropertyName": "The Peckham Apartments",
+      "bookingcomPropertyRoomName": "Apartment",
+      "bookingcomPropertyDescription": "An ideal location for anyone looking to make the most out of living in some of the most vibrant areas of London, whilst maintaining fantastic access to the city center and, a fabulous living space.\n\nAn ideal location for anyone looking to make the most out of living in some of the most vibrant areas of London, whilst maintaining fantastic access to the city centre and, a fabulous living space.\n\nOne bedroom apartment with 1 bathroom, a kitchen with top appliances, and a large living room.\n\nThree people can comfortably sleep on the property:\n\n- Bedroom 1: one double size bed (Sleeps 2)\n\n-Living room: 1 Air Mattresses (Sleep 1)\n\n- Bathroom: Shower, Toilet, Fresh Towels, Shampoo and Shower Gel.\n\nKitchen: Fully Equipped with top-notch appliances such as Cooking Utensils, Coffee & Tea...\n\nStorage: Multiple Wardrobes and Units for Clothes and Luggage.\n\nFamily:\nAll Duvets and Pillows are Hypoallergenic.\nBed Linen 100% Cotton.\nHigh Chair and other children's amenities are available upon request.\n\nStorage: Multiple Wardrobes and Units for Clothes and Luggage.\n\nWifi: 35mbps internet\n\nDecorated to the highest standards.",
+      "invoicingContactName": null,
+      "invoicingContactSurName": null,
+      "invoicingContactPhone1": null,
+      "invoicingContactPhone2": null,
+      "invoicingContactLanguage": null,
+      "invoicingContactEmail": null,
+      "invoicingContactAddress": null,
+      "invoicingContactCity": null,
+      "invoicingContactZipcode": null,
+      "invoicingContactCountry": null,
+      "attachment": null,
+      "listingAmenities": [
+        {
+          "id": 207762590,
+          "amenityId": 1,
+          "amenityName": "Cable TV"
+        },
+        {
+          "id": 207762597,
+          "amenityId": 2,
+          "amenityName": "Internet"
+        },
+        {
+          "id": 207762607,
+          "amenityId": 13,
+          "amenityName": "Washing Machine"
+        },
+        {
+          "id": 207762592,
+          "amenityId": 16,
+          "amenityName": "24-hour checkin"
+        },
+        {
+          "id": 207762591,
+          "amenityId": 18,
+          "amenityName": "Heating"
+        },
+        {
+          "id": 207762617,
+          "amenityId": 25,
+          "amenityName": "Smoke detector"
+        },
+        {
+          "id": 207762630,
+          "amenityId": 26,
+          "amenityName": "Carbon Monoxide Detector"
+        },
+        {
+          "id": 207762603,
+          "amenityId": 29,
+          "amenityName": "Essentials"
+        },
+        {
+          "id": 207762601,
+          "amenityId": 30,
+          "amenityName": "Shampoo"
+        },
+        {
+          "id": 207762621,
+          "amenityId": 31,
+          "amenityName": "Hangers"
+        },
+        {
+          "id": 207762602,
+          "amenityId": 32,
+          "amenityName": "Iron"
+        },
+        {
+          "id": 207762599,
+          "amenityId": 34,
+          "amenityName": "TV"
+        },
+        {
+          "id": 207762611,
+          "amenityId": 38,
+          "amenityName": "Street parking"
+        },
+        {
+          "id": 207762606,
+          "amenityId": 47,
+          "amenityName": "Private living room"
+        },
+        {
+          "id": 207762620,
+          "amenityId": 48,
+          "amenityName": "Suitable for children"
+        },
+        {
+          "id": 207762627,
+          "amenityId": 49,
+          "amenityName": "Suitable for infants"
+        },
+        {
+          "id": 207762596,
+          "amenityId": 53,
+          "amenityName": "Iron board"
+        },
+        {
+          "id": 207762608,
+          "amenityId": 54,
+          "amenityName": "Linens"
+        },
+        {
+          "id": 207762635,
+          "amenityId": 56,
+          "amenityName": "Toaster"
+        },
+        {
+          "id": 207762623,
+          "amenityId": 58,
+          "amenityName": "Microwave"
+        },
+        {
+          "id": 207762616,
+          "amenityId": 59,
+          "amenityName": "Oven"
+        },
+        {
+          "id": 207762632,
+          "amenityId": 60,
+          "amenityName": "Electric kettle"
+        },
+        {
+          "id": 207762633,
+          "amenityId": 62,
+          "amenityName": "Shower"
+        },
+        {
+          "id": 207762615,
+          "amenityId": 63,
+          "amenityName": "Tub"
+        },
+        {
+          "id": 207762637,
+          "amenityId": 68,
+          "amenityName": "Stove"
+        },
+        {
+          "id": 207762624,
+          "amenityId": 69,
+          "amenityName": "Refrigerator"
+        },
+        {
+          "id": 207762598,
+          "amenityId": 70,
+          "amenityName": "Towels"
+        },
+        {
+          "id": 207762622,
+          "amenityId": 74,
+          "amenityName": "Kitchen utensils"
+        },
+        {
+          "id": 207762595,
+          "amenityId": 101,
+          "amenityName": "Hot water"
+        },
+        {
+          "id": 207762628,
+          "amenityId": 129,
+          "amenityName": "Toilet"
+        },
+        {
+          "id": 207762610,
+          "amenityId": 149,
+          "amenityName": "Dining area"
+        },
+        {
+          "id": 207762625,
+          "amenityId": 202,
+          "amenityName": "Long term stays allowed"
+        },
+        {
+          "id": 207762613,
+          "amenityId": 267,
+          "amenityName": "Enhanced Cleaning Practices"
+        },
+        {
+          "id": 207762609,
+          "amenityId": 272,
+          "amenityName": "Contactless Check-In/Out"
+        },
+        {
+          "id": 207762605,
+          "amenityId": 280,
+          "amenityName": "Free WiFi"
+        },
+        {
+          "id": 207762618,
+          "amenityId": 282,
+          "amenityName": "WiFi speed (25+ Mbps)"
+        },
+        {
+          "id": 207762619,
+          "amenityId": 287,
+          "amenityName": "Smart TV"
+        },
+        {
+          "id": 207762629,
+          "amenityId": 294,
+          "amenityName": "Dining table"
+        },
+        {
+          "id": 207762600,
+          "amenityId": 337,
+          "amenityName": "Cleaning products"
+        },
+        {
+          "id": 207762636,
+          "amenityId": 338,
+          "amenityName": "Body soap"
+        },
+        {
+          "id": 207762634,
+          "amenityId": 339,
+          "amenityName": "Conditioner"
+        },
+        {
+          "id": 207762614,
+          "amenityId": 341,
+          "amenityName": "Shower gel"
+        },
+        {
+          "id": 207762593,
+          "amenityId": 342,
+          "amenityName": "Clothing storage"
+        },
+        {
+          "id": 207762594,
+          "amenityId": 343,
+          "amenityName": "Drying rack for clothing"
+        },
+        {
+          "id": 207762626,
+          "amenityId": 351,
+          "amenityName": "Portable fans"
+        },
+        {
+          "id": 207762604,
+          "amenityId": 357,
+          "amenityName": "Freezer"
+        },
+        {
+          "id": 207762612,
+          "amenityId": 361,
+          "amenityName": "Wine glasses"
+        }
+      ],
+      "listingBedTypes": [
+        {
+          "id": 18356005,
+          "bedTypeId": 2,
+          "quantity": 1,
+          "bedroomNumber": 1
+        },
+        {
+          "id": 18356006,
+          "bedTypeId": 49,
+          "quantity": 1,
+          "bedroomNumber": 0
+        }
+      ],
+      "listingImages": [
+        {
+          "id": 298057506,
+          "caption": "Cover photo.jpg",
+          "bookingEngineCaption": null,
+          "airbnbCaption": null,
+          "vrboCaption": null,
+          "url": "https://hostaway-platform.s3.us-west-2.amazonaws.com/listing/61148-155615-XOwkxzmgJDtYrj9Ix-2A25BWySVJC0sK9grT4oPy2Gc-64257b38f0792",
+          "sortOrder": 1
+        },
+        {
+          "id": 298057537,
+          "caption": "Photo 1.jpg",
+          "bookingEngineCaption": null,
+          "airbnbCaption": null,
+          "vrboCaption": null,
+          "url": "https://hostaway-platform.s3.us-west-2.amazonaws.com/listing/61148-155615-oq5Jmc3IXSofrwicKXeybVp17CIq9fnlBP9FxSa94oM-64257b3e699c3",
+          "sortOrder": 2
+        },
+        {
+          "id": 298057568,
+          "caption": "Photo 2.jpg",
+          "bookingEngineCaption": null,
+          "airbnbCaption": null,
+          "vrboCaption": null,
+          "url": "https://hostaway-platform.s3.us-west-2.amazonaws.com/listing/61148-155615-5dKgvp5G6V0w--CDyq6NSuuVP-KjqyNm65-j0PFCqscU-64257b4425a54",
+          "sortOrder": 3
+        },
+        {
+          "id": 298057569,
+          "caption": "Photo 3.jpg",
+          "bookingEngineCaption": null,
+          "airbnbCaption": null,
+          "vrboCaption": null,
+          "url": "https://hostaway-platform.s3.us-west-2.amazonaws.com/listing/61148-155615-smN58smCOxauKKNky98G6-pzeXSVTY1--HEATeilmiAA-64257b49e9a76",
+          "sortOrder": 4
+        },
+        {
+          "id": 298057570,
+          "caption": "Photo 4.jpg",
+          "bookingEngineCaption": null,
+          "airbnbCaption": null,
+          "vrboCaption": null,
+          "url": "https://hostaway-platform.s3.us-west-2.amazonaws.com/listing/61148-155615---Px1RZ--vN9WUbigRoVp--1--XSF5WOWU3ShpRVfnThJA-64257b4faba28",
+          "sortOrder": 5
+        },
+        {
+          "id": 298057571,
+          "caption": "Photo 5.jpg",
+          "bookingEngineCaption": null,
+          "airbnbCaption": null,
+          "vrboCaption": null,
+          "url": "https://hostaway-platform.s3.us-west-2.amazonaws.com/listing/61148-155615-FlN4QOzZlwU9DZ7LLLOoPgicYtS49aULyo--R8nfKGbA-64257b5647356",
+          "sortOrder": 6
+        },
+        {
+          "id": 298057572,
+          "caption": "Photo 9.jpg",
+          "bookingEngineCaption": null,
+          "airbnbCaption": null,
+          "vrboCaption": null,
+          "url": "https://hostaway-platform.s3.us-west-2.amazonaws.com/listing/61148-155615-Y7iOQH--CcJFL1nZaZ4XH9ua3k5da-H7QRjv6j--GKpMQ-64257b5c50261",
+          "sortOrder": 7
+        },
+        {
+          "id": 298057573,
+          "caption": "Photo 6.jpg",
+          "bookingEngineCaption": null,
+          "airbnbCaption": null,
+          "vrboCaption": null,
+          "url": "https://hostaway-platform.s3.us-west-2.amazonaws.com/listing/61148-155615-vzrQW5ApeQOCk1etIx-woo--NCIEMauPhaLSzQsNOHEs-64257b624c7ad",
+          "sortOrder": 8
+        },
+        {
+          "id": 298057574,
+          "caption": "photo 11.jpg",
+          "bookingEngineCaption": null,
+          "airbnbCaption": null,
+          "vrboCaption": null,
+          "url": "https://hostaway-platform.s3.us-west-2.amazonaws.com/listing/61148-155615-DjrEju1NWYSO1kwwY3Ug50E2U-n8RoSE3RjWE6POJuA-64257b685b772",
+          "sortOrder": 9
+        },
+        {
+          "id": 298057575,
+          "caption": "Photo 10.jpg",
+          "bookingEngineCaption": null,
+          "airbnbCaption": null,
+          "vrboCaption": null,
+          "url": "https://hostaway-platform.s3.us-west-2.amazonaws.com/listing/61148-155615-taDTW1DZDDE--41a1itWxTm1KulpfXx5hhj7c6wPIomM-64257b6e39978",
+          "sortOrder": 10
+        },
+        {
+          "id": 298057576,
+          "caption": "Photo 8.jpg",
+          "bookingEngineCaption": null,
+          "airbnbCaption": null,
+          "vrboCaption": null,
+          "url": "https://hostaway-platform.s3.us-west-2.amazonaws.com/listing/61148-155615-sAbh8nnSSvLGWRFtJlnqmTlVV10DTRZILrmGsIsJR3c-64257b743d7d3",
+          "sortOrder": 11
+        },
+        {
+          "id": 298057577,
+          "caption": "Photo 7.jpg",
+          "bookingEngineCaption": null,
+          "airbnbCaption": null,
+          "vrboCaption": null,
+          "url": "https://hostaway-platform.s3.us-west-2.amazonaws.com/listing/61148-155615-mlIbNj67jFJCrk4VwYUmzhy2rx5-qjZYlSWXzDH7nTM-64257b7a80ffe",
+          "sortOrder": 12
+        }
+      ],
+      "listingTags": [
+        {
+          "id": 15413,
+          "name": "2B E1"
+        }
+      ],
+      "listingUnits": [
+        {
+          "id": 38612,
+          "name": "Unit 1",
+          "ground": null,
+          "unitNumber": null,
+          "listingMapIdUnit": null
+        },
+        {
+          "id": 38613,
+          "name": "Unit 2",
+          "ground": null,
+          "unitNumber": null,
+          "listingMapIdUnit": null
+        }
+      ],
+      "propertyLicenseNumber": null,
+      "propertyLicenseType": null,
+      "propertyLicenseIssueDate": null,
+      "propertyLicenseExpirationDate": null,
+      "customFieldValues": [
+        {
+          "id": 42729066,
+          "customFieldId": 68667,
+          "value": null,
+          "insertedOn": "2024-10-27 21:22:43",
+          "updatedOn": "2024-10-27 21:22:43",
+          "customField": {
+            "id": 68667,
+            "name": "grouped_property",
+            "possibleValues": [
+              {
+                "value": "Yes"
+              },
+              {
+                "value": "No"
+              }
+            ],
+            "type": "dropdown",
+            "isPublic": 1,
+            "insertedOn": "2024-10-27 10:33:24",
+            "updatedOn": "2024-10-27 10:33:24"
+          }
+        },
+        {
+          "id": 42729067,
+          "customFieldId": 53002,
+          "value": null,
+          "insertedOn": "2024-10-27 21:22:43",
+          "updatedOn": "2024-10-27 21:22:43",
+          "customField": {
+            "id": 53002,
+            "name": "rehan",
+            "possibleValues": null,
+            "type": "number",
+            "isPublic": 1,
+            "insertedOn": "2023-11-12 02:09:04",
+            "updatedOn": "2023-11-12 02:09:04"
+          }
+        }
+      ],
+      "applyPropertyRentTaxToFees": null,
+      "bookingEngineLeadTime": null,
+      "cancellationPolicyId": 149048,
+      "vrboCancellationPolicyId": 79371,
+      "marriottCancellationPolicyId": 79376,
+      "bookingCancellationPolicyId": 79380,
+      "listingFeeSetting": [],
+      "isRentalAgreementActive": null,
+      "averageNightlyPrice": null,
+      "bookingcomPropertyRegisteredInVcs": null,
+      "bookingcomPropertyHasVat": null,
+      "bookingcomPropertyDeclaresRevenue": null,
+      "airbnbCancellationPolicyId": 79385,
+      "airbnbListingUrl": null,
+      "vrboListingUrl": null,
+      "googleVrListingUrl": null,
+      "expediaListingUrl": null,
+      "averageReviewRating": null,
+      "partnersListingMarkup": 1,
+      "airbnbOfficialListingMarkup": 1,
+      "bookingEngineMarkup": 1,
+      "homeawayApiMarkup": 1,
+      "marriottListingMarkup": 1,
+      "latestActivityOn": "2025-01-23 18:22:25",
+      "bookingEngineUrls": [],
+      "marriottListingName": null,
+      "airbnbPetFeeAmount": null,
+      "insertedOn": "2023-03-30 12:03:42",
+      "insuranceEligibilityStatus": null,
+      "listingSettings": null
+    },
+    {
+      "id": 346994,
+      "propertyTypeId": 1,
+      "name": "The Putney Apart 2",
+      "externalListingName": "The Putney Apart 2",
+      "internalListingName": "2B E1 A - 3 St Clements",
+      "description": "An ideal location for anyone looking to make the most out of living in some of the most vibrant areas of London, whilst maintaining fantastic access to the city centre and, a fabulous living space.\n\nThree bedrooms apartment with 1 bathroom, a kitchen with top appliances, and a large living room.\n\nSeven people can comfortably sleep on the property:\n\n- Bedroom 1: one double size bed (Sleeps 2)\n\n- Bedroom 2: one double size bed (Sleeps 2)\n\n- Bedroom 3: one single size bed (Sleeps 1)\n\n-Living room: 1 Air Mattress (Sleep 1)\n\n- Bathroom: Shower, Toilet, Fresh Towels, Shampoo and Shower Gel.\n\nKitchen: Fully Equipped with top-notch appliances such as Cooking Utensils, Coffee & Tea...\n\nStorage: Multiple Wardrobes and Units for Clothes and Luggage.\n\nFamily:\nAll Duvets and Pillows are Hypoallergenic.\nBed Linen 100% Cotton.\nHigh Chair and other children's amenities are available upon request.\n\nStorage: Multiple Wardrobes and Units for Clothes and Luggage.\n\nWifi: 35mbps internet\n\nDecorated to the highest standards.\n\nThe flat is perfectly located within close proximity to supermarkets, cafes, and markets. The area is quiet but within walking distance of parks, rivers, museums, art galleries, markets, and places to eat.\n\nThe apartment is great for business travelers with most of the commercial districts a short walk or tube ride away.\n\nAl Forno Putney - (7 minute walk)\nMunal Tandoori - (9 minute walk)\nElmshaw Road - (2 minute walk)",
+      "thumbnailUrl": null,
+      "houseRules": "Quiet hours from 11pm to 8am",
+      "keyPickup": null,
+      "specialInstruction": null,
+      "doorSecurityCode": null,
+      "country": "United Kingdom of Great Britain and Northern Ireland",
+      "countryCode": "GB",
+      "state": "England",
+      "city": "London",
+      "street": "Hawkesbury Road",
+      "address": "4 Hawkesbury Rd, London SW15 5HH, UK",
+      "publicAddress": "4 Hawkesbury Road, England, United Kingdom, SW15 5HH",
+      "zipcode": "SW15 5HH",
+      "price": 150,
+      "starRating": null,
+      "weeklyDiscount": null,
+      "monthlyDiscount": null,
+      "propertyRentTax": 0,
+      "guestPerPersonPerNightTax": 0,
+      "guestStayTax": 0,
+      "guestNightlyTax": 0,
+      "refundableDamageDeposit": 0,
+      "isDepositStayCollected": 0,
+      "personCapacity": 7,
+      "maxChildrenAllowed": null,
+      "maxInfantsAllowed": null,
+      "maxPetsAllowed": null,
+      "lat": 51.4593844,
+      "lng": -0.235409,
+      "checkInTimeStart": 15,
+      "checkInTimeEnd": 23,
+      "checkOutTime": 11,
+      "cancellationPolicy": "strict",
+      "squareMeters": null,
+      "roomType": "entire_home",
+      "bathroomType": "private",
+      "bedroomsNumber": 3,
+      "bedsNumber": 4,
+      "bathroomsNumber": 1,
+      "guestBathroomsNumber": null,
+      "minNights": 5,
+      "maxNights": 1125,
+      "guestsIncluded": 1,
+      "cleaningFee": 0,
+      "checkinFee": 0,
+      "priceForExtraPerson": 0,
+      "instantBookable": 1,
+      "instantBookableLeadTime": null,
+      "airbnbBookingLeadTime": null,
+      "airbnbBookingLeadTimeAllowRequestToBook": null,
+      "airbnbName": null,
+      "airbnbSummary": null,
+      "airbnbSpace": null,
+      "airbnbAccess": null,
+      "airbnbInteraction": null,
+      "airbnbNeighborhoodOverview": null,
+      "airbnbTransit": null,
+      "airbnbNotes": null,
+      "airbnbExportStatus": null,
+      "vrboExportStatus": null,
+      "marriotExportStatus": null,
+      "bookingcomExportStatus": null,
+      "expediaExportStatus": null,
+      "googleExportStatus": null,
+      "allowSameDayBooking": 0,
+      "sameDayBookingLeadTime": 12,
+      "contactName": null,
+      "contactSurName": null,
+      "contactPhone1": null,
+      "contactPhone2": null,
+      "contactLanguage": null,
+      "contactEmail": null,
+      "contactAddress": null,
+      "language": null,
+      "currencyCode": "GBP",
+      "timeZoneName": "Europe/London",
+      "wifiUsername": null,
+      "wifiPassword": null,
+      "cleannessStatus": null,
+      "cleaningInstruction": null,
+      "cleannessStatusUpdatedOn": null,
+      "homeawayPropertyName": "The Putney Apart 2",
+      "homeawayPropertyHeadline": null,
+      "homeawayPropertyDescription": "An ideal location for anyone looking to make the most out of living in some of the most vibrant areas of London, whilst maintaining fantastic access to the city centre and, a fabulous living space.\n\nThree bedrooms apartment with 1 bathroom, a kitchen with top appliances, and a large living room.\n\nSeven people can comfortably sleep on the property:\n\n- Bedroom 1: one double size bed (Sleeps 2)\n\n- Bedroom 2: one double size bed (Sleeps 2)\n\n- Bedroom 3: one single size bed (Sleeps 1)\n\n-Living room: 1 Air Mattress (Sleep 1)\n\n- Bathroom: Shower, Toilet, Fresh Towels, Shampoo and Shower Gel.\n\nKitchen: Fully Equipped with top-notch appliances such as Cooking Utensils, Coffee & Tea...\n\nStorage: Multiple Wardrobes and Units for Clothes and Luggage.\n\nFamily:\nAll Duvets and Pillows are Hypoallergenic.\nBed Linen 100% Cotton.\nHigh Chair and other children's amenities are available upon request.\n\nStorage: Multiple Wardrobes and Units for Clothes and Luggage.\n\nWifi: 35mbps internet\n\nDecorated to the highest standards.\n\nThe flat is perfectly located within close proximity to supermarkets, cafes, and markets. The area is quiet but within walking distance of parks, rivers, museums, art galleries, markets, and places to eat.\n\nThe apartment is great for business travelers with most of the commercial districts a short walk or tube ride away.\n\nAl Forno Putney - (7 minute walk)\nMunal Tandoori - (9 minute walk)\nElmshaw Road - (2 minute walk)",
+      "bookingcomPropertyName": "The Putney Apart 2",
+      "bookingcomPropertyRoomName": "Apartment",
+      "bookingcomPropertyDescription": "An ideal location for anyone looking to make the most out of living in some of the most vibrant areas of London, whilst maintaining fantastic access to the city centre and, a fabulous living space.\n\nThree bedrooms apartment with 1 bathroom, a kitchen with top appliances, and a large living room.\n\nSeven people can comfortably sleep on the property:\n\n- Bedroom 1: one double size bed (Sleeps 2)\n\n- Bedroom 2: one double size bed (Sleeps 2)\n\n- Bedroom 3: one single size bed (Sleeps 1)\n\n-Living room: 1 Air Mattress (Sleep 1)\n\n- Bathroom: Shower, Toilet, Fresh Towels, Shampoo and Shower Gel.\n\nKitchen: Fully Equipped with top-notch appliances such as Cooking Utensils, Coffee & Tea...\n\nStorage: Multiple Wardrobes and Units for Clothes and Luggage.\n\nFamily:\nAll Duvets and Pillows are Hypoallergenic.\nBed Linen 100% Cotton.\nHigh Chair and other children's amenities are available upon request.\n\nStorage: Multiple Wardrobes and Units for Clothes and Luggage.\n\nWifi: 35mbps internet\n\nDecorated to the highest standards.\n\nThe flat is perfectly located within close proximity to supermarkets, cafes, and markets. The area is quiet but within walking distance of parks, rivers, museums, art galleries, markets, and places to eat.\n\nThe apartment is great for business travelers with most of the commercial districts a short walk or tube ride away.\n\nAl Forno Putney - (7 minute walk)\nMunal Tandoori - (9 minute walk)\nElmshaw Road - (2 minute walk)",
+      "invoicingContactName": null,
+      "invoicingContactSurName": null,
+      "invoicingContactPhone1": null,
+      "invoicingContactPhone2": null,
+      "invoicingContactLanguage": null,
+      "invoicingContactEmail": null,
+      "invoicingContactAddress": null,
+      "invoicingContactCity": null,
+      "invoicingContactZipcode": null,
+      "invoicingContactCountry": null,
+      "attachment": null,
+      "listingAmenities": [
+        {
+          "id": 231502383,
+          "amenityId": 48,
+          "amenityName": "Suitable for children"
+        },
+        {
+          "id": 231502382,
+          "amenityId": 49,
+          "amenityName": "Suitable for infants"
+        }
+      ],
+      "listingBedTypes": [
+        {
+          "id": 19345080,
+          "bedTypeId": 2,
+          "quantity": 1,
+          "bedroomNumber": 1
+        }
+      ],
+      "listingImages": [
+        {
+          "id": 329354488,
+          "caption": "image test.jpg",
+          "bookingEngineCaption": null,
+          "airbnbCaption": null,
+          "vrboCaption": null,
+          "url": "https://hostaway-platform.s3.us-west-2.amazonaws.com/listing/61148-346994-0pD83--ennfqHFxlbE3fWWpF--5kxmdUXtK425rrlHKC0-68b9354f4b3bd",
+          "sortOrder": 1
+        }
+      ],
+      "listingTags": [
+        {
+          "id": 34652,
+          "name": "2B E1 A"
+        }
+      ],
+      "listingUnits": [],
+      "propertyLicenseNumber": null,
+      "propertyLicenseType": null,
+      "propertyLicenseIssueDate": null,
+      "propertyLicenseExpirationDate": null,
+      "customFieldValues": [
+        {
+          "id": 43431593,
+          "customFieldId": 53002,
+          "value": null,
+          "insertedOn": "2025-01-04 13:39:29",
+          "updatedOn": "2025-09-04 06:44:40",
+          "customField": {
+            "id": 53002,
+            "name": "rehan",
+            "possibleValues": null,
+            "type": "number",
+            "isPublic": 1,
+            "insertedOn": "2023-11-12 02:09:04",
+            "updatedOn": "2023-11-12 02:09:04"
+          }
+        },
+        {
+          "id": 43431594,
+          "customFieldId": 70501,
+          "value": null,
+          "insertedOn": "2025-01-04 13:39:29",
+          "updatedOn": "2025-09-04 06:44:40",
+          "customField": {
+            "id": 70501,
+            "name": "Lockbox",
+            "possibleValues": [
+              {
+                "value": "Yes"
+              },
+              {
+                "value": "No"
+              }
+            ],
+            "type": "dropdown",
+            "isPublic": 1,
+            "insertedOn": "2024-12-06 11:22:11",
+            "updatedOn": "2024-12-06 11:22:11"
+          }
+        },
+        {
+          "id": 43431595,
+          "customFieldId": 69508,
+          "value": null,
+          "insertedOn": "2025-01-04 13:39:29",
+          "updatedOn": "2025-09-04 06:44:40",
+          "customField": {
+            "id": 69508,
+            "name": "Number of Flats",
+            "possibleValues": null,
+            "type": "number",
+            "isPublic": 1,
+            "insertedOn": "2024-11-15 16:59:26",
+            "updatedOn": "2024-11-15 16:59:26"
+          }
+        },
+        {
+          "id": 43431596,
+          "customFieldId": 68667,
+          "value": null,
+          "insertedOn": "2025-01-04 13:39:29",
+          "updatedOn": "2025-09-04 06:44:40",
+          "customField": {
+            "id": 68667,
+            "name": "grouped_property",
+            "possibleValues": [
+              {
+                "value": "Yes"
+              },
+              {
+                "value": "No"
+              }
+            ],
+            "type": "dropdown",
+            "isPublic": 1,
+            "insertedOn": "2024-10-27 10:33:24",
+            "updatedOn": "2024-10-27 10:33:24"
+          }
+        }
+      ],
+      "applyPropertyRentTaxToFees": null,
+      "bookingEngineLeadTime": null,
+      "cancellationPolicyId": null,
+      "vrboCancellationPolicyId": null,
+      "marriottCancellationPolicyId": null,
+      "bookingCancellationPolicyId": null,
+      "listingFeeSetting": [],
+      "isRentalAgreementActive": null,
+      "averageNightlyPrice": null,
+      "bookingcomPropertyRegisteredInVcs": null,
+      "bookingcomPropertyHasVat": null,
+      "bookingcomPropertyDeclaresRevenue": null,
+      "airbnbCancellationPolicyId": null,
+      "airbnbListingUrl": null,
+      "vrboListingUrl": null,
+      "googleVrListingUrl": null,
+      "expediaListingUrl": null,
+      "averageReviewRating": 0,
+      "partnersListingMarkup": 1,
+      "airbnbOfficialListingMarkup": 1,
+      "bookingEngineMarkup": 1,
+      "homeawayApiMarkup": 1,
+      "marriottListingMarkup": 1,
+      "latestActivityOn": "2025-01-04 13:40:04",
+      "bookingEngineUrls": [],
+      "marriottListingName": null,
+      "airbnbPetFeeAmount": null,
+      "insertedOn": "2025-01-04 13:35:48",
+      "insuranceEligibilityStatus": null,
+      "listingSettings": null
+    }
+  ],
+  "count": 3,
+  "limit": 100,
+  "offset": null
+}

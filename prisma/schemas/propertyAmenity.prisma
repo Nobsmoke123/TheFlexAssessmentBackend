@@ -1,0 +1,8 @@
+model PropertyAmenity {
+    id                          String          @id     @default(cuid())
+    property                    Property        @relation(fields: [propertyId], references: [id])
+    propertyId                  String
+    name                        String 
+
+    @@index([propertyId], map: "idx_propertyamenity_propertyId")
+}

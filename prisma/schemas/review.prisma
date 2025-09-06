@@ -1,0 +1,28 @@
+model Review {
+    id                                  String                                  @id     @default(cuid())
+    property                            Property                                @relation(fields: [propertyId], references: [id])
+    propertyId                          String
+    source                              ReviewSource
+    sourceReviewId                      String                                 @unique
+    type                                String
+    channel                             Channel                                @relation(fields: [channelId], references: [id])
+    channelId                           Int
+    rating                              Int
+    authorName                          String
+    authorAvatarUrl                     String?
+    content                             String
+    status                              String
+    ratingOriginal                      Int?
+    ratingNormalized                    Int?
+    reviewCategory                      ReviewCategory?
+    raw                                 String
+    createdAt                           DateTime                                @default(now())
+    updatedAt                           DateTime                                @updatedAt
+
+    @@index([propertyId], map: "idx_review_propertyId")
+    @@index([channelId], map: "idx_review_channelId")
+    @@index([type], map: "idx_review_type")
+    @@index([source], map: "idx_review_source")
+    @@index([sourceReviewId], map: "idx_review_sourceReviewId")
+    @@unique([source, sourceReviewId])
+}

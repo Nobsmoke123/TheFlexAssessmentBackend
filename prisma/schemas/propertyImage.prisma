@@ -1,0 +1,10 @@
+model PropertyImage {
+    id                              String              @id     @default(cuid())
+    property                        Property            @relation(fields: [propertyId], references: [id])
+    propertyId                      String
+    url                             String 
+    caption                         String?
+    sortOrder                       Int?
+
+    @@index([propertyId], map: "idx_propertyimage_propertyId")
+}

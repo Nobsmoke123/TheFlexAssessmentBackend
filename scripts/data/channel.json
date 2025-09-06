@@ -1,0 +1,77 @@
+[
+  {
+    "id": 2018,
+    "name": "airbnbOfficial",
+    "displayName": "Airbnb"
+  },
+  {
+    "id": 2002,
+    "name": "homeaway",
+    "displayName": "Home Away"
+  },
+  {
+    "id": 2005,
+    "name": "bookingcom",
+    "displayName": "Booking.com"
+  },
+  {
+    "id": 2007,
+    "name": "expedia",
+    "displayName": "Expedia"
+  },
+  {
+    "id": 2009,
+    "name": "homeawayical",
+    "displayName": "Homeawayical"
+  },
+  {
+    "id": 2010,
+    "name": "vrboical",
+    "displayName": "Vrboical"
+  },
+  {
+    "id": 2000,
+    "name": "direct",
+    "displayName": "Direct"
+  },
+  {
+    "id": 2013,
+    "name": "bookingengine",
+    "displayName": "Booking Engine"
+  },
+  {
+    "id": 2015,
+    "name": "customIcal",
+    "displayName": "Custom Ical"
+  },
+  {
+    "id": 2016,
+    "name": "tripadvisorical",
+    "displayName": "Tripadvisorical"
+  },
+  {
+    "id": 2017,
+    "name": "wordpress",
+    "displayName": "Wordpress"
+  },
+  {
+    "id": 2019,
+    "name": "marriott",
+    "displayName": "Marriott"
+  },
+  {
+    "id": 2020,
+    "name": "partner",
+    "displayName": "Partner"
+  },
+  {
+    "id": 2021,
+    "name": "gds",
+    "displayName": "Gds"
+  },
+  {
+    "id": 2022,
+    "name": "google",
+    "displayName": "Google"
+  }
+]

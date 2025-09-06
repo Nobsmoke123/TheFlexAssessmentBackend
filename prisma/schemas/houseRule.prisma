@@ -1,0 +1,8 @@
+model HouseRule {
+    id                              String                  @id   @default(cuid())
+    property                        Property                @relation(fields: [propertyId], references: [id])
+    propertyId                      String
+    rule                            String
+
+     @@index([propertyId], map: "idx_houserule_propertyId")
+}
