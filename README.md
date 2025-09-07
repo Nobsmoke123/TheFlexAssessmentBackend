@@ -40,6 +40,8 @@ $ pnpm run schema merge
 # run prisma migration
 $ pnpm run prisma:migrate
 
+# add env variable (copy .env.sample into .env and populate it)
+
 # seed database
 $ pnpm run seed:data
 
