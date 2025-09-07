@@ -1,10 +1,8 @@
-// export enum ReviewSource {
-//   HOSTAWAY = 'HOSTAWAY',
-//   GOOGLE = 'GOOGLE',
-//   OTHER = 'OTHER',
-// }
-
-export type ReviewSource = 'HOSTAWAY' | 'GOOGLE' | 'OTHER';
+export enum ReviewSource {
+  HOSTAWAY = 'HOSTAWAY',
+  GOOGLE = 'GOOGLE',
+  OTHER = 'OTHER',
+}
 
 export type PaginatedResponse<T, K extends string = 'data'> = {
   [key in K]: T[];
@@ -15,14 +13,10 @@ export enum ReviewStatus {
   PUBLISHED = 'published',
 }
 
-// export type ReviewStatus = 'pending' | 'published';
-
 export enum ReviewType {
   HOST_TO_GUEST = 'host-to-guest',
   GUEST_TO_HOST = 'guest-to-host',
 }
-
-// export type ReviewType = 'host-to-guest' | 'guest-to-host';
 
 export interface NormalizedReview {
   source: ReviewSource;

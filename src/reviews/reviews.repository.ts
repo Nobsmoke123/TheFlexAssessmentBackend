@@ -93,69 +93,71 @@ export class ReviewsRepository {
 
   async createReviews(reviews: NormalizedReview[]) {
     for (let review of reviews) {
-      // Get the propertyId
-      const property = await this.prisma.property.findUnique({
-        where: {
-          internalListingName: review.listingName,
-        },
-      });
+      await this.prisma.$transaction(async (transaction) => {
+        // Get the propertyId
+        const property = await transaction.property.findUnique({
+          where: {
+            internalListingName: review.listingName,
+          },
+        });
 
-      if (!property) {
-        throw new ConflictException(
-          `Property with listingName ${review.listingName} not found.`,
-        );
-      }
+        if (!property) {
+          throw new ConflictException(
+            `Property with listingName ${review.listingName} not found.`,
+          );
+        }
 
-      // Create the review
-      const createdReview = await this.prisma.review.upsert({
-        where: {
-          source_sourceReviewId: {
+        // Create the review
+        const createdReview = await transaction.review.upsert({
+          where: {
+            source_sourceReviewId: {
+              source: review.source,
+              sourceReviewId: review.sourceReviewId,
+            },
+          },
+          create: {
+            propertyId: property.id,
             source: review.source,
             sourceReviewId: review.sourceReviewId,
+            type: review.type,
+            channelId: review.channelId,
+            authorName: review.authorName,
+            status: review.status,
+            raw: review.raw,
+            content: review.content,
+            rating: review.rating!,
+            ...(review.authorAvatarUrl && {
+              authorAvatarUrl: review.authorAvatarUrl,
+            }),
           },
-        },
-        create: {
-          propertyId: property.id,
-          source: review.source,
-          sourceReviewId: review.sourceReviewId,
-          type: review.type,
-          channelId: review.channelId,
-          authorName: review.authorName,
-          status: review.status,
-          raw: review.raw,
-          content: review.content,
-          rating: review.rating!,
-          ...(review.authorAvatarUrl && {
-            authorAvatarUrl: review.authorAvatarUrl,
-          }),
-        },
-        update: {
-          content: review.content,
-          rating: review.rating!,
-        },
-      });
+          update: {
+            content: review.content,
+            rating: review.rating!,
+          },
+        });
 
-      // Add the review category if it exists.
-      if (review.subScores) {
-        for (const score of review.subScores) {
-          await this.prisma.reviewCategory.upsert({
-            where: {
-              reviewId_categoryName: {
+        // Add the review category if it exists.
+        if (review.subScores) {
+          for (const score of review.subScores) {
+            await transaction.reviewCategory.upsert({
+              where: {
+                reviewId_categoryName: {
+                  reviewId: createdReview.id,
+                  categoryName: score.category,
+                },
+              },
+              create: {
                 reviewId: createdReview.id,
                 categoryName: score.category,
+                score: score.rating,
               },
-            },
-            create: {
-              reviewId: createdReview.id,
-              categoryName: score.category,
-              score: score.rating,
-            },
-            update: {
-              score: score.rating,
-            },
-          });
+              update: {
+                score: score.rating,
+              },
+            });
+          }
         }
-      }
+      });
     }
     return this.listReviews();
   }

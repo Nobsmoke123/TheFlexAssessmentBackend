@@ -23,5 +23,6 @@ model Review {
     @@index([type], map: "idx_review_type")
     @@index([source], map: "idx_review_source")
     @@index([sourceReviewId], map: "idx_review_sourceReviewId")
+    @@index([createdAt], map: "idx_review_createdAt")
     @@unique([source, sourceReviewId])
 }

@@ -2,7 +2,7 @@ import { Controller, Get, Param, Query } from '@nestjs/common';
 import { PropertyService } from './properties.service';
 import { PaginationQueryDto } from 'src/common/dto/paginationQuery.dto';
 
-@Controller('properties')
+@Controller('api/properties')
 export class PropertiesController {
   constructor(private readonly propertyService: PropertyService) {}
 

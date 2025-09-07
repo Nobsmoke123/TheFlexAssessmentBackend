@@ -1,5 +1,10 @@
 import { Injectable } from '@nestjs/common';
-import { NormalizedReview } from 'src/common/types';
+import {
+  NormalizedReview,
+  ReviewSource,
+  ReviewStatus,
+  ReviewType,
+} from 'src/common/types';
 import { GoogleFetcher } from 'src/integrations/google/google.fetcher';
 import { HostawayFetcher } from 'src/integrations/hostaway/hostaway.fetcher';
 import { ReviewsRepository } from './reviews.repository';
@@ -24,6 +29,38 @@ export class ReviewsService {
 
   async upsertNormalizedReviews(reviews: NormalizedReview[]) {
     return this.reviewRepository.createReviews(reviews);
+  }
+
+  async findAll(
+    propertyId?: string,
+    channelId?: number,
+    reviewType?: ReviewType,
+    status?: ReviewStatus,
+    from?: string,
+    to?: string,
+    source?: ReviewSource,
+    limit: number = 10,
+    cursor?: string,
+  ) {
+    return this.reviewRepository.listReviews(
+      propertyId,
+      channelId,
+      reviewType,
+      status,
+      from,
+      to,
+      source,
+      limit,
+      cursor,
+    );
+  }
+
+  async approveReview(reviewId: string) {
+    return this.reviewRepository.setApproval(reviewId);
+  }
+
+  async revokeReview(reviewId: string) {
+    return this.reviewRepository.revokeApproval(reviewId);
   }
 
   async fetchGoogleReviewsForProperty(googlePlaceId: string) {
