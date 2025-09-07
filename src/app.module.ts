@@ -4,6 +4,7 @@ import { PropertiesModule } from './properties/properties.module';
 import { ReviewsModule } from './reviews/reviews.module';
 import { IntegrationsModule } from './integrations/integrations.module';
 import { ConfigModule } from '@nestjs/config';
+import { ChannelsModule } from './channels/channels.module';
 import * as path from 'node:path';
 import * as Joi from 'joi';
 
@@ -33,6 +34,7 @@ import * as Joi from 'joi';
     PropertiesModule,
     ReviewsModule,
     IntegrationsModule,
+    ChannelsModule,
   ],
 })
 export class AppModule {}

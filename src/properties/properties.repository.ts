@@ -106,7 +106,7 @@ export class PropertyRepository {
       include: {
         reviews: {
           where: {
-            status: 'pending',
+            status: 'published',
           },
           select: {
             authorName: true,

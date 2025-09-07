@@ -14,6 +14,16 @@ export enum ReviewStatus {
   REJECTED = 'rejected',
 }
 
+export enum SortBy {
+  RATING = 'rating',
+  CREATEDAT = 'createdAt',
+}
+
+export enum SortOrder {
+  ASC = 'asc',
+  DESC = 'desc',
+}
+
 export interface ReviewFilters {
   channelId?: string;
   ratingMin?: number;

@@ -1,4 +1,10 @@
-import { ReviewSource, ReviewStatus, ReviewType } from '../../common/types';
+import {
+  ReviewSource,
+  ReviewStatus,
+  ReviewType,
+  SortBy,
+  SortOrder,
+} from '../../common/types';
 
 import {
   IsDateString,
@@ -56,11 +62,17 @@ export class ReviewPaginationQueryDto {
 
   @IsString()
   @IsOptional()
-  sortBy?: 'rating' | 'createdAt';
+  @IsEnum(SortBy, {
+    message: `Invalid 'sortBy'. Must be either 'rating' or 'createdAt'`,
+  })
+  sortBy?: SortBy;
 
   @IsString()
   @IsOptional()
-  sortOrder?: 'asc' | 'desc';
+  @IsEnum(SortOrder, {
+    message: `Invalid 'sortOrder'. Must be either 'asc' or 'desc'`,
+  })
+  sortOrder?: SortOrder;
 
   @IsNumber()
   @IsOptional()

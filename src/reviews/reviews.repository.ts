@@ -5,6 +5,7 @@ import {
   NormalizedReview,
   PaginatedResponse,
   ReviewStatus,
+  SortBy,
 } from 'src/common/types';
 import { PrismaService } from 'src/prisma/prisma.service';
 
@@ -23,14 +24,32 @@ export class ReviewsRepository {
       from,
       to,
       source,
-      limit = 10,
+      limit = 25,
       cursor,
+      ratingMin,
+      sortBy,
+      sortOrder,
     } = reviewPaginationQueryDto;
 
     const where: Record<string, any> = {};
 
+    const orderBy: Array<Record<string, string>> = [];
+
+    if (sortBy) {
+      if (sortBy === SortBy.RATING) {
+        orderBy.push({ rating: sortOrder ?? 'asc' });
+      } else {
+        orderBy.push({ createdAt: sortOrder ?? 'asc' });
+      }
+    }
+
     if (propertyId) {
       where.propertyId = propertyId;
+    }
+
+    if (ratingMin) {
+      where.rating = {};
+      where.rating.gte = ratingMin;
     }
 
     if (source) {
@@ -74,7 +93,7 @@ export class ReviewsRepository {
       take: limit + 1,
       skip: cursor ? 1 : 0,
       ...(cursor && { cursor: { id: cursor } }),
-      orderBy: [{ createdAt: 'desc' }],
+      orderBy,
     });
 
     const hasNext = result.length > limit;
@@ -89,8 +108,6 @@ export class ReviewsRepository {
       numberOfRecords: reviews.length,
     };
   }
-
-  async listReviewsByPropertyId() {}
 
   async createReviews(
     reviews: NormalizedReview[],

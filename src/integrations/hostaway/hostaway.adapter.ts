@@ -10,13 +10,7 @@ export class HostawayAdapter extends IntegrationAdapter {
 
     let normalizedRating = 0;
 
-    // 1. Use review.rating if available
-    if (typeof review.rating === 'number') {
-      normalizedRating = review.rating;
-    }
-
-    // 2. Otherwise, average the subScores
-    else if (Array.isArray(subScores) && subScores.length > 0) {
+    if (Array.isArray(subScores) && subScores.length > 0) {
       const total = subScores.reduce((sum, score) => sum + score.rating, 0);
       normalizedRating = total / subScores.length;
     }
