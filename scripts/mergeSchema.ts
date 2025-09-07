@@ -69,7 +69,7 @@ async function validatePrismaSchema(
 
     // First, try to format the schema to catch basic syntax issues
     try {
-      execSync(`pnpx prisma format --schema="${schemaPath}"`, {
+      execSync(`npx prisma format --schema="${schemaPath}"`, {
         stdio: 'pipe',
         encoding: 'utf-8',
       });
@@ -81,7 +81,7 @@ async function validatePrismaSchema(
 
     // Then validate the schema for more comprehensive checks
     try {
-      execSync(`pnpx prisma validate --schema="${schemaPath}"`, {
+      execSync(`npx prisma validate --schema="${schemaPath}"`, {
         stdio: 'pipe',
         encoding: 'utf-8',
       });
