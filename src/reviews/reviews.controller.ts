@@ -45,16 +45,16 @@ export class ReviewsController {
     return response;
   }
 
-  @Post('property/:id/google/fetch')
-  async fetchGoogle(
-    @Param('id') id: string,
-    @Body() body: { placeId?: string },
-  ) {
-    const res = await this.svc.fetchGoogleReviewsForProperty(
-      id,
-      body.placeId,
-      true,
-    );
-    return { status: 'ok', count: res.length, reviews: res };
-  }
+  // @Post('property/:id/google/fetch')
+  // async fetchGoogle(
+  //   @Param('id') id: string,
+  //   @Body() body: { placeId?: string },
+  // ) {
+  //   const res = await this.svc.fetchGoogleReviewsForProperty(
+  //     id,
+  //     body.placeId,
+  //     true,
+  //   );
+  //   return { status: 'ok', count: res.length, reviews: res };
+  // }
 }

@@ -1,4 +1,4 @@
-import { NormalizedReview, ReviewStatus } from 'src/common/types';
+import { NormalizedReview, ReviewSource, ReviewStatus } from 'src/common/types';
 import { IntegrationAdapter } from '../adapter';
 import { Injectable } from '@nestjs/common';
 import { HostawayReview } from '../types/types';
@@ -7,7 +7,7 @@ import { HostawayReview } from '../types/types';
 export class HostawayAdapter extends IntegrationAdapter {
   normalize(review: HostawayReview): NormalizedReview {
     return {
-      source: 'HOSTAWAY',
+      source: ReviewSource.HOSTAWAY,
       sourceReviewId: `${review.id}`,
       type: review.type,
       status: ReviewStatus.PENDING,

@@ -1,4 +1,9 @@
-import { NormalizedReview } from 'src/common/types';
+import {
+  NormalizedReview,
+  ReviewSource,
+  ReviewStatus,
+  ReviewType,
+} from 'src/common/types';
 import { IntegrationAdapter } from '../adapter';
 import { Injectable } from '@nestjs/common';
 import { GoogleReview } from '../types/types';
@@ -7,10 +12,10 @@ import { GoogleReview } from '../types/types';
 export class GoogleAdapter extends IntegrationAdapter {
   normalize(review: GoogleReview): NormalizedReview {
     return {
-      source: 'GOOGLE',
+      source: ReviewSource.GOOGLE,
       sourceReviewId: review.name,
-      type: 'guest-to-host',
-      status: 'pending',
+      type: ReviewType.GUEST_TO_HOST,
+      status: ReviewStatus.PENDING,
       content: review.text.text,
       rating: review.rating,
       channelId: 2022, // default this 2022 for google reviews

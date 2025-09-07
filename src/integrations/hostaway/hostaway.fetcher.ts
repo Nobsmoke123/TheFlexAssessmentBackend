@@ -1,9 +1,10 @@
 import * as fs from 'node:fs/promises';
 import path from 'path';
-import axios from 'axios';
+import { httpClient } from 'utils/http.client';
 import { HostawayAdapter } from './hostaway.adapter';
 import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
+import { resilientRequest } from 'utils/http.circuit';
 
 @Injectable()
 export class HostawayFetcher {
@@ -27,13 +28,15 @@ export class HostawayFetcher {
   async fetchLive() {
     const URL = `${this.configService.get<string>('HOSTAWAY_API_BASE_URL')}/reviews`;
 
-    const response = await axios.get(URL, {
+    const response = await resilientRequest({
+      url: URL,
+      method: 'GET',
       headers: {
         Authorization: `Bearer ${this.configService.get<string>('HOSTAWAY_API_KEY')}`,
       },
     });
 
-    return response.data.result ?? [];
+    return response.result ?? [];
   }
 
   async fetchAndNormalize({ useMock = true } = {}) {

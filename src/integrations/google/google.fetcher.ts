@@ -1,4 +1,4 @@
-import axios from 'axios';
+import { httpClient } from 'utils/http.client';
 import path from 'path';
 import * as fs from 'node:fs/promises';
 import { GoogleAdapter } from './google.adapter';
@@ -47,7 +47,7 @@ export class GoogleFetcher {
       },
     };
 
-    const response = await axios.post(URL, payload, {
+    const response = await httpClient.post(URL, payload, {
       headers: {
         'X-Goog-Api-Key': `${this.configService.get<string>('GOOGLE_API_KEY')!}`,
         'X-Goog-FieldMask':
@@ -59,7 +59,7 @@ export class GoogleFetcher {
   async getPlaceReviewByPlaceId(placeId: string): Promise<GoogleReview[]> {
     const URL = `${this.configService.get<string>('GOOGLE_PLACES_REVIEW_URL')!}/${placeId}`;
 
-    const response = await axios.get(URL, {
+    const response = await httpClient.get(URL, {
       headers: {
         'X-Goog-Api-Key': `${this.configService.get<string>('GOOGLE_API_KEY')!}`,
         'X-Goog-FieldMask': 'id,displayName,reviews,rating',
@@ -77,6 +77,6 @@ export class GoogleFetcher {
       }),
     );
 
-    return results;
+    return results ?? [];
   }
 }

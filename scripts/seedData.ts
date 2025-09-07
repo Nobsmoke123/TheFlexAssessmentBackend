@@ -1,7 +1,8 @@
 import { PrismaClient } from '@prisma/client';
 import * as fs from 'node:fs/promises';
 import * as path from 'node:path';
-import { fetchHostawayListings } from './utils/fetchListings';
+import { fetchHostawayListings } from '../utils/fetchListings';
+import { channel } from 'node:diagnostics_channel';
 
 interface Channel {
   id: number;
@@ -128,6 +129,20 @@ class Seeder {
         `Failed to load data from ${filepath} : ${(error as Error).message}`,
       );
     }
+  }
+
+  /**
+   * Validate data integrity
+   */
+  private async validateData(): Promise<void> {
+    console.log('🔍 Validating data integrity...');
+
+    const channels = await this.prisma.channel.count();
+    const properties = await this.prisma.property.count();
+
+    console.log(`📊 Data Summary:`);
+    console.log(`📊 Channels: ${channels}`);
+    console.log(`📊 Properties: ${properties}`);
   }
 
   /**
@@ -279,5 +294,64 @@ class Seeder {
     console.log(
       `✅ Created/Updated ${this.result.propertiesCreated} properties`,
     );
+  }
+
+  /**
+   * Main seeding function
+   */
+  async seed(): Promise<SeedResult> {
+    console.log('🚀 Starting geographic data seeding...\n');
+
+    try {
+      // Check if data files exist
+      const dataFiles = ['./data/channel.json'];
+
+      for (const file of dataFiles) {
+        try {
+          await fs.access(path.join(__dirname, file));
+        } catch {
+          this.result.errors.push(`Data file not found: ${file}`);
+        }
+      }
+
+      if (this.result.errors.length > 0) {
+        throw new Error('Required data files are missing');
+      }
+
+      // Seed data in order (channels -> properties)
+      await this.seedChannels();
+      await this.seedProperties();
+
+      // Validate the seeded data
+      await this.validateData();
+
+      this.result.success = true;
+
+      console.log('\n🎉  Data seeding completed successfully!');
+    } catch (error) {
+      this.result.errors.push(`Seeding failed: ${(error as Error).message}`);
+      console.error('❌ Seeding failed:', error);
+    } finally {
+      await this.prisma.$disconnect();
+    }
+
+    return this.result;
+  }
+
+  /**
+   * Clean up existing data (use with caution)
+   */
+  async cleanup(): Promise<void> {
+    console.log('🧹 Cleaning up existing data...');
+
+    try {
+      await this.prisma.channel.deleteMany();
+      await this.prisma.property.deleteMany();
+
+      console.log('✅ Cleanup completed');
+    } catch (error) {
+      console.error('❌ Cleanup failed:', error);
+      throw error;
+    }
   }
 }
