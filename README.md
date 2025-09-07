@@ -35,7 +35,7 @@ $ pnpm install
 
 ```bash
 # merge prisma schemas
-$ pnpm run schema merge
+$ pnpm run schema:merge
 
 # run prisma migration
 $ pnpm run prisma:migrate
