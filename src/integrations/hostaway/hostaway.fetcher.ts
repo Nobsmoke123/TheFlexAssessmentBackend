@@ -15,7 +15,10 @@ export class HostawayFetcher {
   async fetchMockReviews(mockReviewPath?: string) {
     const reviewPath =
       mockReviewPath ??
-      path.join(process.cwd(), '../../../scripts/data/mock-reviews.json');
+      path.join(
+        process.cwd(),
+        '../../../scripts/data/mock-hostaway-reviews.json',
+      );
     const raw = await fs.readFile(reviewPath, 'utf-8');
     const json = JSON.parse(raw);
     return json.result;

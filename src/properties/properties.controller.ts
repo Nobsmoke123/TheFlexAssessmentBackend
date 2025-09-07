@@ -1,4 +1,19 @@
-import { Controller } from '@nestjs/common';
+import { Controller, Get, Param, Query } from '@nestjs/common';
+import { PropertyService } from './properties.service';
+import { PaginationQueryDto } from 'src/common/dto/paginationQuery.dto';
 
 @Controller('properties')
-export class PropertiesController {}
+export class PropertiesController {
+  constructor(private readonly propertyService: PropertyService) {}
+
+  @Get()
+  async findAll(@Query() paginationQueryDto: PaginationQueryDto) {
+    const { limit = 10, cursor } = paginationQueryDto;
+    return this.propertyService.listAll(limit, cursor);
+  }
+
+  @Get(':id')
+  async findOne(@Param('id') propertyId: string) {
+    return this.propertyService.getOne(propertyId);
+  }
+}

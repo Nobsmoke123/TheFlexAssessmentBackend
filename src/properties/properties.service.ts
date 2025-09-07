@@ -1,4 +1,15 @@
 import { Injectable } from '@nestjs/common';
+import { PropertyRepository } from './properties.repository';
 
 @Injectable()
-export class PropertiesService {}
+export class PropertyService {
+  constructor(private readonly propertyRepository: PropertyRepository) {}
+
+  async listAll(limit: number, cursor?: string) {
+    return this.propertyRepository.listAll(limit, cursor);
+  }
+
+  async getOne(propertyId: string) {
+    return this.propertyRepository.getOne(propertyId);
+  }
+}

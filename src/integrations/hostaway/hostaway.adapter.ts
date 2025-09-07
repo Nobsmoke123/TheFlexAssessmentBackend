@@ -1,4 +1,4 @@
-import { NormalizedReview } from 'src/common/types';
+import { NormalizedReview, ReviewStatus } from 'src/common/types';
 import { IntegrationAdapter } from '../adapter';
 import { Injectable } from '@nestjs/common';
 import { HostawayReview } from '../types/types';
@@ -10,7 +10,7 @@ export class HostawayAdapter extends IntegrationAdapter {
       source: 'HOSTAWAY',
       sourceReviewId: `${review.id}`,
       type: review.type,
-      status: 'pending',
+      status: ReviewStatus.PENDING,
       content: review.publicReview,
       rating: review.rating,
       channelId: review.channelId ?? 2000, // default this to direct reviews on hostaway

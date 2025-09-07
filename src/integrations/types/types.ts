@@ -1,3 +1,5 @@
+import { ReviewStatus, ReviewType } from 'src/common/types';
+
 export interface GoogleReview {
   name: string; //review-id
   relativePublishTimeDescription: string;
@@ -24,8 +26,8 @@ export interface GoogleReview {
 
 export interface HostawayReview {
   id: number;
-  type: 'host-to-guest' | 'guest-to-host';
-  status: 'published' | 'awaiting';
+  type: ReviewType;
+  status: ReviewStatus;
   rating?: number;
   channelId?: number;
   publicReview: string;

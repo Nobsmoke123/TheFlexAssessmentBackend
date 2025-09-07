@@ -6,19 +6,23 @@
 
 export type ReviewSource = 'HOSTAWAY' | 'GOOGLE' | 'OTHER';
 
-// export enum ReviewStatus {
-//   PENDING = 'PENDING',
-//   PUBLISHED = 'PUBLISHED',
-// }
+export type PaginatedResponse<T, K extends string = 'data'> = {
+  [key in K]: T[];
+} & { nextCursorValue: string | null; numberOfRecords: number };
 
-export type ReviewStatus = 'pending' | 'published';
+export enum ReviewStatus {
+  PENDING = 'pending',
+  PUBLISHED = 'published',
+}
 
-// export enum ReviewType {
-//   HOST_TO_GUEST = 'HOST_TO_GUEST',
-//   GUEST_TO_HOST = 'GUEST_TO_HOST',
-// }
+// export type ReviewStatus = 'pending' | 'published';
 
-export type ReviewType = 'host-to-guest' | 'guest-to-host';
+export enum ReviewType {
+  HOST_TO_GUEST = 'host-to-guest',
+  GUEST_TO_HOST = 'guest-to-host',
+}
+
+// export type ReviewType = 'host-to-guest' | 'guest-to-host';
 
 export interface NormalizedReview {
   source: ReviewSource;
