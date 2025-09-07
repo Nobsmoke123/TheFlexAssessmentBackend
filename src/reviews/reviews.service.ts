@@ -3,7 +3,7 @@ import { NormalizedReview } from 'src/common/types';
 import { GoogleFetcher } from 'src/integrations/google/google.fetcher';
 import { HostawayFetcher } from 'src/integrations/hostaway/hostaway.fetcher';
 import { ReviewsRepository } from './reviews.repository';
-import { ReviewPaginationQueryDto } from 'src/common/dto/reviewPaginationQuery.dto';
+import { ReviewPaginationQueryDto } from 'src/reviews/dto/reviewPaginationQuery.dto';
 
 @Injectable()
 export class ReviewsService {

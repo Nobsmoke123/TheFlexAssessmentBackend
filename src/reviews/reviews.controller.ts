@@ -1,6 +1,6 @@
 import { Controller, Get, Param, Patch, Query } from '@nestjs/common';
 import { ReviewsService } from './reviews.service';
-import { ReviewPaginationQueryDto } from 'src/common/dto/reviewPaginationQuery.dto';
+import { ReviewPaginationQueryDto } from 'src/reviews/dto/reviewPaginationQuery.dto';
 
 @Controller('api/reviews')
 export class ReviewsController {
@@ -23,6 +23,12 @@ export class ReviewsController {
   @Patch(':id/approve')
   async approve(@Param('id') reviewId: string) {
     const response = await this.reviewService.approveReview(reviewId);
+    return response;
+  }
+
+  @Patch(':id/reject')
+  async reject(@Param('id') reviewId: string) {
+    const response = await this.reviewService.revokeReview(reviewId);
     return response;
   }
 }

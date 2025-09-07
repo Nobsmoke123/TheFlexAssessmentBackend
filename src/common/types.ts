@@ -11,6 +11,17 @@ export type PaginatedResponse<T, K extends string = 'data'> = {
 export enum ReviewStatus {
   PENDING = 'pending',
   PUBLISHED = 'published',
+  REJECTED = 'rejected',
+}
+
+export interface ReviewFilters {
+  channelId?: string;
+  ratingMin?: number;
+  status?: 'pending' | 'published' | 'rejected';
+  startDate?: string;
+  endDate?: string;
+  sortBy?: 'rating' | 'createdAt';
+  sortOrder?: 'asc' | 'desc';
 }
 
 export enum ReviewType {

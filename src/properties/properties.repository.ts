@@ -12,6 +12,73 @@ export class PropertyRepository {
     cursor?: string,
   ): Promise<PaginatedResponse<Property, 'properties'>> {
     const result = await this.prisma.property.findMany({
+      include: {
+        images: true,
+        reviews: {
+          where: {
+            status: 'published',
+          },
+          select: {
+            authorName: true,
+            content: true,
+            createdAt: true,
+            id: true,
+            propertyId: true,
+            rating: true,
+            source: true,
+            sourceReviewId: true,
+            status: true,
+            type: true,
+            updatedAt: true,
+            channel: true,
+          },
+        },
+      },
+      take: limit + 1,
+      skip: cursor ? 1 : 0,
+      ...(cursor && { cursor: { id: cursor } }),
+      orderBy: [{ createdAt: 'asc' }],
+    });
+
+    const hasNext = result.length > limit;
+
+    const properties = hasNext ? result.slice(0, limit) : result;
+
+    const nextCursorValue = hasNext
+      ? properties[properties.length - 1]?.id
+      : null;
+
+    return {
+      properties,
+      nextCursorValue,
+      numberOfRecords: properties.length,
+    };
+  }
+
+  async listAllAdmin(
+    limit: number,
+    cursor?: string,
+  ): Promise<PaginatedResponse<Property, 'properties'>> {
+    const result = await this.prisma.property.findMany({
+      include: {
+        images: true,
+        reviews: {
+          select: {
+            authorName: true,
+            content: true,
+            createdAt: true,
+            id: true,
+            propertyId: true,
+            rating: true,
+            source: true,
+            sourceReviewId: true,
+            status: true,
+            type: true,
+            updatedAt: true,
+            channel: true,
+          },
+        },
+      },
       take: limit + 1,
       skip: cursor ? 1 : 0,
       ...(cursor && { cursor: { id: cursor } }),
@@ -37,7 +104,25 @@ export class PropertyRepository {
     const property = await this.prisma.property.findUnique({
       where: { id: propertyId },
       include: {
-        reviews: true,
+        reviews: {
+          where: {
+            status: 'pending',
+          },
+          select: {
+            authorName: true,
+            content: true,
+            createdAt: true,
+            id: true,
+            propertyId: true,
+            rating: true,
+            source: true,
+            sourceReviewId: true,
+            status: true,
+            type: true,
+            updatedAt: true,
+            channel: true,
+          },
+        },
         images: true,
         houseRules: true,
         cancellationPolicies: true,

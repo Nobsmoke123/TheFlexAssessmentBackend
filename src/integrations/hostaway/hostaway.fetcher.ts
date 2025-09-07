@@ -4,7 +4,6 @@ import { HostawayAdapter } from './hostaway.adapter';
 import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { resilientRequest } from 'utils/http.circuit';
-import { ReviewPaginationQueryDto } from 'src/common/dto/reviewPaginationQuery.dto';
 
 @Injectable()
 export class HostawayFetcher {

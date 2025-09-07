@@ -1,12 +1,10 @@
 import { ConflictException, Injectable } from '@nestjs/common';
 import { Review } from '@prisma/client';
-import { ReviewPaginationQueryDto } from 'src/common/dto/reviewPaginationQuery.dto';
+import { ReviewPaginationQueryDto } from 'src/reviews/dto/reviewPaginationQuery.dto';
 import {
   NormalizedReview,
   PaginatedResponse,
-  ReviewSource,
   ReviewStatus,
-  ReviewType,
 } from 'src/common/types';
 import { PrismaService } from 'src/prisma/prisma.service';
 
@@ -91,6 +89,8 @@ export class ReviewsRepository {
       numberOfRecords: reviews.length,
     };
   }
+
+  async listReviewsByPropertyId() {}
 
   async createReviews(
     reviews: NormalizedReview[],
@@ -192,7 +192,7 @@ export class ReviewsRepository {
     return this.prisma.review.update({
       where: { id: reviewId },
       data: {
-        status: ReviewStatus.PENDING,
+        status: ReviewStatus.REJECTED,
       },
     });
   }

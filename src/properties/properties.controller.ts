@@ -12,6 +12,12 @@ export class PropertiesController {
     return this.propertyService.listAll(limit, cursor);
   }
 
+  @Get('/admin')
+  async adminListAll(@Query() paginationQueryDto: PaginationQueryDto) {
+    const { limit = 10, cursor } = paginationQueryDto;
+    return this.propertyService.listAllAdmin(limit, cursor);
+  }
+
   @Get(':id')
   async findOne(@Param('id') propertyId: string) {
     return this.propertyService.getOne(propertyId);

@@ -9,7 +9,13 @@ export class PropertyService {
     return this.propertyRepository.listAll(limit, cursor);
   }
 
-  async getOne(propertyId: string) {
+  async listAllAdmin(limit: number, cursor?: string) {
+    return this.propertyRepository.listAllAdmin(limit, cursor);
+  }
+
+  async getOne(
+    propertyId: string,
+  ) {
     return this.propertyRepository.getOne(propertyId);
   }
 }
