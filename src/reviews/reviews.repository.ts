@@ -92,7 +92,10 @@ export class ReviewsRepository {
     };
   }
 
-  async createReviews(reviews: NormalizedReview[]) {
+  async createReviews(
+    reviews: NormalizedReview[],
+    reviewPaginationQuery: ReviewPaginationQueryDto,
+  ) {
     for (let review of reviews) {
       await this.prisma.$transaction(async (transaction) => {
         // Get the propertyId
@@ -173,7 +176,7 @@ export class ReviewsRepository {
       });
     }
 
-    return this.listReviews({ limit: 20 });
+    return this.listReviews(reviewPaginationQuery);
   }
 
   async setApproval(reviewId: string): Promise<Review> {
@@ -191,6 +194,13 @@ export class ReviewsRepository {
       data: {
         status: ReviewStatus.PENDING,
       },
+    });
+  }
+
+  async getAllPropertiesWithGooglePlaceId() {
+    return this.prisma.property.findMany({
+      where: { googlePlaceId: { not: null } },
+      select: { id: true, googlePlaceId: true },
     });
   }
 }

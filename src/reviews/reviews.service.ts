@@ -1,10 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import {
-  NormalizedReview,
-  ReviewSource,
-  ReviewStatus,
-  ReviewType,
-} from 'src/common/types';
+import { NormalizedReview } from 'src/common/types';
 import { GoogleFetcher } from 'src/integrations/google/google.fetcher';
 import { HostawayFetcher } from 'src/integrations/hostaway/hostaway.fetcher';
 import { ReviewsRepository } from './reviews.repository';
@@ -25,13 +20,19 @@ export class ReviewsService {
       useMock: process.env.HOSTAWAY_USE_MOCK === 'true',
     });
 
-    const reviews = await this.upsertNormalizedReviews(normalized);
+    const reviews = await this.upsertNormalizedReviews(
+      normalized,
+      reviewPaginationQueryDto,
+    );
 
     return reviews;
   }
 
-  async upsertNormalizedReviews(reviews: NormalizedReview[]) {
-    return this.reviewRepository.createReviews(reviews);
+  async upsertNormalizedReviews(
+    reviews: NormalizedReview[],
+    reviewPaginationQuery: ReviewPaginationQueryDto,
+  ) {
+    return this.reviewRepository.createReviews(reviews, reviewPaginationQuery);
   }
 
   async findAll(reviewPaginationQueryDto: ReviewPaginationQueryDto) {
@@ -44,5 +45,31 @@ export class ReviewsService {
 
   async revokeReview(reviewId: string) {
     return this.reviewRepository.revokeApproval(reviewId);
+  }
+
+  async fetchGoogleReviews(reviewPaginationQuery: ReviewPaginationQueryDto) {
+    const properties =
+      await this.reviewRepository.getAllPropertiesWithGooglePlaceId();
+
+    if (!properties.length) {
+      console.warn('No properties with googlePlaceId found');
+      return [];
+    }
+    let allReviews: NormalizedReview[] = [];
+
+    for (const prop of properties) {
+      const googleReviews = await this.google.getPlaceReviewByPlaceId(
+        prop.googlePlaceId!,
+      );
+
+      allReviews.push(...googleReviews);
+    }
+
+    const result = await this.reviewRepository.createReviews(
+      allReviews,
+      reviewPaginationQuery,
+    );
+
+    return result;
   }
 }

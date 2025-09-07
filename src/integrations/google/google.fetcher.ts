@@ -5,6 +5,7 @@ import { GoogleAdapter } from './google.adapter';
 import { ConfigService } from '@nestjs/config';
 import { Injectable } from '@nestjs/common';
 import { GoogleReview } from '../types/types';
+import { NormalizedReview } from 'src/common/types';
 
 @Injectable()
 export class GoogleFetcher {
@@ -54,9 +55,10 @@ export class GoogleFetcher {
           'places.displayName,places.formattedAddress,places.priceLevel,places.id,places.types',
       },
     });
+    return response.data;
   }
 
-  async getPlaceReviewByPlaceId(placeId: string): Promise<GoogleReview[]> {
+  async getPlaceReviewByPlaceId(placeId: string): Promise<NormalizedReview[]> {
     const URL = `${this.configService.get<string>('GOOGLE_PLACES_REVIEW_URL')!}/${placeId}`;
 
     const response = await httpClient.get(URL, {
@@ -77,6 +79,6 @@ export class GoogleFetcher {
       }),
     );
 
-    return results ?? [];
+    return this.adapter.normalizeBulk(results) ?? [];
   }
 }
