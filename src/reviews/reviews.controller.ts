@@ -7,35 +7,16 @@ export class ReviewsController {
   constructor(private readonly reviewService: ReviewsService) {}
 
   @Get('hostaway')
-  async hostaway() {
-    const data = await this.reviewService.fetchHostawayNormalized();
+  async hostaway(@Query() reviewPaginationQueryDto: ReviewPaginationQueryDto) {
+    const data = await this.reviewService.fetchHostawayNormalized(
+      reviewPaginationQueryDto,
+    );
     return data;
   }
 
   @Get()
   async list(@Query() reviewPaginationQueryDto: ReviewPaginationQueryDto) {
-    const {
-      propertyId,
-      channelId,
-      reviewType,
-      status,
-      from,
-      to,
-      source,
-      limit,
-      cursor,
-    } = reviewPaginationQueryDto;
-    const results = await this.reviewService.findAll(
-      propertyId,
-      channelId,
-      reviewType,
-      status,
-      from,
-      to,
-      source,
-      limit,
-      cursor,
-    );
+    const results = await this.reviewService.findAll(reviewPaginationQueryDto);
     return results;
   }
 

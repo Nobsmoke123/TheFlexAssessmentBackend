@@ -1,10 +1,10 @@
 import * as fs from 'node:fs/promises';
-import path from 'path';
-import { httpClient } from 'utils/http.client';
+import * as path from 'path';
 import { HostawayAdapter } from './hostaway.adapter';
 import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { resilientRequest } from 'utils/http.circuit';
+import { ReviewPaginationQueryDto } from 'src/common/dto/reviewPaginationQuery.dto';
 
 @Injectable()
 export class HostawayFetcher {
@@ -16,10 +16,7 @@ export class HostawayFetcher {
   async fetchMockReviews(mockReviewPath?: string) {
     const reviewPath =
       mockReviewPath ??
-      path.join(
-        process.cwd(),
-        '../../../scripts/data/mock-hostaway-reviews.json',
-      );
+      path.join(process.cwd(), 'scripts/data/mock-hostaway-reviews.json');
     const raw = await fs.readFile(reviewPath, 'utf-8');
     const json = JSON.parse(raw);
     return json.result;

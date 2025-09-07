@@ -129,7 +129,7 @@ model Review {
     content                             String
     status                              String
     ratingOriginal                      Int?
-    reviewCategory                      ReviewCategory?
+    reviewCategory                      ReviewCategory[]
     raw                                 String
     createdAt                           DateTime                                @default(now())
     updatedAt                           DateTime                                @updatedAt
@@ -147,7 +147,7 @@ model Review {
 model ReviewCategory {
     id                                      String                  @id  @default(cuid())
     review                                  Review                  @relation(fields: [reviewId], references: [id])
-    reviewId                                String                  @unique
+    reviewId                                String                 
     categoryName                            String
     score                                   Int
 

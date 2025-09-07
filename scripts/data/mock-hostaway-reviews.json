@@ -4,7 +4,7 @@
     {
       "id": 7453,
       "type": "host-to-guest",
-      "status": "published",
+      "status": "pending",
       "rating": null,
       "publicReview": "Shane and family are wonderful! Would definitely host again :)",
       "reviewCategory": [
@@ -14,13 +14,13 @@
       ],
       "submittedAt": "2020-08-21 22:45:14",
       "guestName": "Shane Finkelstein",
-      "listingName": "2B N1 A - 29 Shoreditch Heights",
+      "listingName": "2B E1 A - 27 St Clements",
       "channelId": 2005
     },
     {
       "id": 7454,
       "type": "guest-to-host",
-      "status": "published",
+      "status": "pending",
       "rating": 9,
       "publicReview": "Clean apartment, great location.",
       "reviewCategory": [
@@ -29,7 +29,22 @@
       ],
       "submittedAt": "2021-01-10 12:00:00",
       "guestName": "Ana Smith",
-      "listingName": "2B E1 A - 27 St Clements",
+      "listingName": "2B E1 - 33 St Clements",
+      "channelId": 2005
+    },
+    {
+      "id": 7455,
+      "type": "guest-to-host",
+      "status": "pending",
+      "rating": 9,
+      "publicReview": "Clean apartment, great location.",
+      "reviewCategory": [
+        { "category": "cleanliness", "rating": 9 },
+        { "category": "communication", "rating": 9 }
+      ],
+      "submittedAt": "2021-01-10 12:00:00",
+      "guestName": "Ana Smith",
+      "listingName": "2B E1 A - 3 St Clements",
       "channelId": 2005
     }
   ]

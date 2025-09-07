@@ -8,6 +8,7 @@ import {
 import { GoogleFetcher } from 'src/integrations/google/google.fetcher';
 import { HostawayFetcher } from 'src/integrations/hostaway/hostaway.fetcher';
 import { ReviewsRepository } from './reviews.repository';
+import { ReviewPaginationQueryDto } from 'src/common/dto/reviewPaginationQuery.dto';
 
 @Injectable()
 export class ReviewsService {
@@ -17,7 +18,9 @@ export class ReviewsService {
     private readonly reviewRepository: ReviewsRepository,
   ) {}
 
-  async fetchHostawayNormalized() {
+  async fetchHostawayNormalized(
+    reviewPaginationQueryDto: ReviewPaginationQueryDto,
+  ) {
     const normalized = await this.hostaway.fetchAndNormalize({
       useMock: process.env.HOSTAWAY_USE_MOCK === 'true',
     });
@@ -31,28 +34,8 @@ export class ReviewsService {
     return this.reviewRepository.createReviews(reviews);
   }
 
-  async findAll(
-    propertyId?: string,
-    channelId?: number,
-    reviewType?: ReviewType,
-    status?: ReviewStatus,
-    from?: string,
-    to?: string,
-    source?: ReviewSource,
-    limit: number = 10,
-    cursor?: string,
-  ) {
-    return this.reviewRepository.listReviews(
-      propertyId,
-      channelId,
-      reviewType,
-      status,
-      from,
-      to,
-      source,
-      limit,
-      cursor,
-    );
+  async findAll(reviewPaginationQueryDto: ReviewPaginationQueryDto) {
+    return this.reviewRepository.listReviews(reviewPaginationQueryDto);
   }
 
   async approveReview(reviewId: string) {
@@ -61,9 +44,5 @@ export class ReviewsService {
 
   async revokeReview(reviewId: string) {
     return this.reviewRepository.revokeApproval(reviewId);
-  }
-
-  async fetchGoogleReviewsForProperty(googlePlaceId: string) {
-    // const normalized = await this.google.
   }
 }

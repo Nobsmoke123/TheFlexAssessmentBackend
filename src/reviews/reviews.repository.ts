@@ -1,5 +1,6 @@
 import { ConflictException, Injectable } from '@nestjs/common';
 import { Review } from '@prisma/client';
+import { ReviewPaginationQueryDto } from 'src/common/dto/reviewPaginationQuery.dto';
 import {
   NormalizedReview,
   PaginatedResponse,
@@ -14,16 +15,20 @@ export class ReviewsRepository {
   constructor(private readonly prisma: PrismaService) {}
 
   async listReviews(
-    propertyId?: string, // filter by property
-    channelId?: number, // filter by channel
-    reviewType?: ReviewType, // filter by review type
-    status?: ReviewStatus, // filter by review status
-    from?: string, // filter using date
-    to?: string, // filter using date
-    source?: ReviewSource,
-    limit: number = 10,
-    cursor?: string,
+    reviewPaginationQueryDto: ReviewPaginationQueryDto,
   ): Promise<PaginatedResponse<Review, 'reviews'>> {
+    const {
+      propertyId,
+      channelId,
+      reviewType,
+      status,
+      from,
+      to,
+      source,
+      limit = 10,
+      cursor,
+    } = reviewPaginationQueryDto;
+
     const where: Record<string, any> = {};
 
     if (propertyId) {
@@ -38,16 +43,12 @@ export class ReviewsRepository {
       where.channelId = channelId;
     }
 
-    if (reviewType === ReviewType.GUEST_TO_HOST) {
-      where.type = ReviewType.GUEST_TO_HOST;
-    } else {
-      where.type = ReviewType.HOST_TO_GUEST;
+    if (reviewType) {
+      where.type = reviewType;
     }
 
-    if (status === ReviewStatus.PUBLISHED) {
-      where.status = ReviewStatus.PUBLISHED;
-    } else {
-      where.status = ReviewStatus.PENDING;
+    if (status) {
+      where.status = status;
     }
 
     if (from || to) {
@@ -116,23 +117,31 @@ export class ReviewsRepository {
             },
           },
           create: {
-            propertyId: property.id,
+            property: {
+              connect: {
+                id: property.id,
+              },
+            },
+            channel: {
+              connect: {
+                id: review.channelId,
+              },
+            },
             source: review.source,
             sourceReviewId: review.sourceReviewId,
             type: review.type,
-            channelId: review.channelId,
             authorName: review.authorName,
             status: review.status,
             raw: review.raw,
             content: review.content,
-            rating: review.rating!,
+            rating: review.rating ?? 10,
             ...(review.authorAvatarUrl && {
               authorAvatarUrl: review.authorAvatarUrl,
             }),
           },
           update: {
             content: review.content,
-            rating: review.rating!,
+            rating: review.rating ?? 10,
           },
         });
 
@@ -147,19 +156,24 @@ export class ReviewsRepository {
                 },
               },
               create: {
-                reviewId: createdReview.id,
+                review: {
+                  connect: {
+                    id: createdReview.id,
+                  },
+                },
                 categoryName: score.category,
-                score: score.rating,
+                score: score.rating ?? 10,
               },
               update: {
-                score: score.rating,
+                score: score.rating ?? 10,
               },
             });
           }
         }
       });
     }
-    return this.listReviews();
+
+    return this.listReviews({ limit: 20 });
   }
 
   async setApproval(reviewId: string): Promise<Review> {

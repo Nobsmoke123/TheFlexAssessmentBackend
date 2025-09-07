@@ -23,8 +23,8 @@
     "schema:merge:no-backup": "ts-node scripts/mergeSchema.ts --no-backup",
     "schema:merge:no-validate": "ts-node scripts/mergeSchema.ts --no-validate",
     "schema:help": "echo 'Schema Management Commands:' && echo '  pnpm run schema:merge          - Merge all schema files with backup and validation' && echo '  pnpm run schema:merge:dry-run   - Test merge without making changes' && echo '  pnpm run schema:merge:no-backup  - Merge without creating backup' && echo '  pnpm run schema:merge:no-validate - Merge without validation'",
-    "seed:geographic": "ts-node scripts/seedGeographicData.ts",
-    "seed:geographic:cleanup": "ts-node scripts/seedGeographicData.ts --cleanup",
+    "seed:data": "dotenv -e .env -- ts-node scripts/seedData.ts",
+    "seed:data:cleanup": "dotenv -e .env -- ts-node scripts/seedData.ts --cleanup",
     "prisma:migrate": "dotenv -e .env prisma migrate dev"
   },
   "dependencies": {

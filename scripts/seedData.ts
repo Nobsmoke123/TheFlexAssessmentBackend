@@ -2,7 +2,6 @@ import { PrismaClient } from '@prisma/client';
 import * as fs from 'node:fs/promises';
 import * as path from 'node:path';
 import { fetchHostawayListings } from '../utils/fetchListings';
-import { channel } from 'node:diagnostics_channel';
 
 interface Channel {
   id: number;
@@ -151,7 +150,7 @@ class Seeder {
   private async seedChannels(): Promise<void> {
     console.log('⚡️ Seeding channels.....');
 
-    const channels = await this.loadJsonData<Channel>('../data/channel.json');
+    const channels = await this.loadJsonData<Channel>('data/channel.json');
 
     for (let channel of channels) {
       try {
@@ -345,8 +344,14 @@ class Seeder {
     console.log('🧹 Cleaning up existing data...');
 
     try {
-      await this.prisma.channel.deleteMany();
+      await this.prisma.reviewCategory.deleteMany();
+      await this.prisma.review.deleteMany();
+      await this.prisma.propertyImage.deleteMany();
+      await this.prisma.propertyAmenity.deleteMany();
+      await this.prisma.houseRule.deleteMany();
+      await this.prisma.cancellationPolicy.deleteMany();
       await this.prisma.property.deleteMany();
+      await this.prisma.channel.deleteMany();
 
       console.log('✅ Cleanup completed');
     } catch (error) {
@@ -355,3 +360,44 @@ class Seeder {
     }
   }
 }
+
+/**
+ * CLI entry point
+ */
+async function main(): Promise<void> {
+  const args = process.argv.slice(2);
+  const seeder = new Seeder();
+
+  try {
+    if (args.includes('--cleanup')) {
+      await seeder.cleanup();
+    }
+
+    const result = await seeder.seed();
+
+    if (!result.success) {
+      console.error('\n❌ Seeding failed with errors:');
+      result.errors.forEach((error) => console.error(`  - ${error}`));
+      process.exit(1);
+    }
+
+    if (result.warnings.length > 0) {
+      console.log('\n⚠️  Warnings:');
+      result.warnings.forEach((warning) => console.log(`  - ${warning}`));
+    }
+
+    console.log('\n📈 Final Results:');
+    console.log(`  📈 Channels: ${result.channelsCreated}`);
+    console.log(`  📈 Properties: ${result.propertiesCreated}`);
+  } catch (error) {
+    console.error('❌ Unexpected error:', error);
+    process.exit(1);
+  }
+}
+
+// Run the seeder if this script is executed directly
+if (require.main === module) {
+  main();
+}
+
+export { Seeder };

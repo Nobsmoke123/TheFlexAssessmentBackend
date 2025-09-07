@@ -11,13 +11,16 @@ import { GoogleReview } from '../types/types';
 @Injectable()
 export class GoogleAdapter extends IntegrationAdapter {
   normalize(review: GoogleReview): NormalizedReview {
+    const rawRating = review.rating; // 1–5
+    const normalizedRating = rawRating * 2;
+
     return {
       source: ReviewSource.GOOGLE,
       sourceReviewId: review.name,
       type: ReviewType.GUEST_TO_HOST,
       status: ReviewStatus.PENDING,
       content: review.text.text,
-      rating: review.rating,
+      rating: normalizedRating,
       channelId: 2022, // default this 2022 for google reviews
       raw: JSON.stringify(review),
       authorName: review.authorAttribution.displayName,

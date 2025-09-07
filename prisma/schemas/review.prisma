@@ -13,7 +13,7 @@ model Review {
     content                             String
     status                              String
     ratingOriginal                      Int?
-    reviewCategory                      ReviewCategory?
+    reviewCategory                      ReviewCategory[]
     raw                                 String
     createdAt                           DateTime                                @default(now())
     updatedAt                           DateTime                                @updatedAt

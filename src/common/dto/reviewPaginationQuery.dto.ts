@@ -11,43 +11,43 @@ import {
 } from 'class-validator';
 
 export class ReviewPaginationQueryDto extends PartialType(PaginationQueryDto) {
-  @IsOptional()
   @IsString()
+  @IsOptional()
   propertyId?: string;
 
-  @IsOptional()
   @IsPositive()
   @IsNumber()
+  @IsOptional()
   channelId?: number;
 
-  @IsOptional()
   @IsString()
   @IsEnum(ReviewType, {
     message: `Invalid 'reviewType'. Must be either 'host-to-guest' or 'guest-to-host'.`,
   })
+  @IsOptional()
   reviewType?: ReviewType;
 
-  @IsOptional()
   @IsString()
   @IsEnum(ReviewStatus, {
     message: `Invalid 'status'. Must be either 'pending' or 'published'.`,
   })
+  @IsOptional()
   status?: ReviewStatus;
 
-  @IsOptional()
   @IsString()
   @IsDateString({ strict: true })
+  @IsOptional()
   from?: string;
 
-  @IsOptional()
   @IsString()
   @IsDateString({ strict: true })
+  @IsOptional()
   to?: string;
 
-  @IsOptional()
   @IsString()
   @IsEnum(ReviewSource, {
     message: `Invalid 'source'. Must be either 'HOSTAWAY', 'GOOGLE', or 'OTHERS'`,
   })
+  @IsOptional()
   source?: ReviewSource;
 }
