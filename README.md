@@ -34,6 +34,18 @@ $ pnpm install
 ## Compile and run the project
 
 ```bash
+# merge prisma schemas
+$ pnpm run schema merge
+
+# run prisma migration
+$ pnpm run prisma:migrate
+
+# seed database
+$ pnpm run seed:data
+
+# clean up database and run seed again (optional)
+$ pnpm run seed:data:cleanup
+
 # development
 $ pnpm run start
 
