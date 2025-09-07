@@ -37,6 +37,9 @@ $ pnpm install
 # merge prisma schemas
 $ pnpm run schema:merge
 
+# run docker-compose up -d db (The database has to be running before you run prisma migration)
+$ docker-compose up -d db
+
 # run prisma migration
 $ pnpm run prisma:migrate
 
